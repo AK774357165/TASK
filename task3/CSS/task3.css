@@ -6,8 +6,8 @@ body{
     font-size: 62.5%;
 }
 .botton{
-    width: 5.4em;
-    height: 5.4em;
+    width: 2.7em;
+    height: 2.7em;
     margin-left: 1%;
     margin-top: 1%;
     margin-bottom: 11.6em;
@@ -16,8 +16,8 @@ body{
     background-repeat: no-repeat;
 }
 .logo{
-    width: 18.1em;
-    height: 7em;
+    width: 9.05em;
+    height: 3.5em;
     margin: auto;
     background: url(../images/task3_07.png);
     block-size: 100% 100%;
@@ -34,19 +34,22 @@ body{
     height: 13em;
     margin-bottom: 25%;
 }
+.bottom p{
+    color: white;
+    font-weight: 400;
+    font-size: 1.6em;
+}
 .bottom .logo1{
-    width: 12em;
-    height: 12.5em;
+    width: 10em;
+    height: 10em;
     float: left;
     margin-left: 10%;
-    background: url(../images/task3_11.png);
-    background-repeat: no-repeat;
+    text-align: center;
 }
 .bottom .logo2{
-    width: 10.3em;
-    height: 12.5em;
+    width: 10em;
+    height: 10em;
     float: right;
     margin-right: 10%;
-    background: url(../images/task3_14.png);
-    background-repeat: no-repeat;
+    text-align: center;
 }
