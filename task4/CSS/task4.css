@@ -75,8 +75,7 @@ body{
 .searchdiv{
     height: 5em;
     line-height: 5em;
-    position: absolute;
-    left: 8em;
+    margin-left: 8em; 
 }
 input{
     width: 100%;
