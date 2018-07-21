@@ -1,0 +1,81 @@
+body{
+    font-size: 62.5%;
+    margin: 0;
+    background-color: #ffffff;
+    font-weight: bold;
+}
+.header{
+    width: 100%;
+    height: 4em;
+    line-height: 4em;
+    background-color: #5fbfcd;
+    position: fixed;
+    top: 0em;
+}
+.back{
+    width: 1.5em;
+    height: 4em;
+    float: left;
+    margin-left: 1em;
+    margin-right: -2.5em;
+    background-image: url(../images/task5-4_03.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.title{
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+}
+.main{
+    margin-top: 4em;
+}
+.main .introduction{
+    width: 100%;
+    height: 16.35em;
+    background-image: url(../images/task5-1_03.png);
+    overflow: hidden;
+    background-size: cover;
+}
+.main .introduction .photo{
+    height: 8.5em;
+    width: 8.5em;
+    float: left;
+    background-image: url(../images/task5-6_03.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-left: 1.5em;
+    margin-top: 3.9em;
+}
+.main .introduction .info{
+    font-size: 1.5em;
+    margin-left: 8em;
+    margin-top: 3.8em;
+    color: white;
+}
+.main .introduction .location{
+    font-size: 1em;
+    margin-top: 1em;
+    margin-left: 12em;
+}
+.main .introduction .location .logo{
+    width: 0.9em;
+    height: 1.15em;
+    background-image: url(../images/task5-1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    float: left;
+    margin-right: 0.7em;
+}
+.main .introduction .location span{
+    color: white;
+    
+}
+.footer{
+    width: 100%;
+    height: 4.4em;
+    position: fixed;
+    background-color: green;
+    bottom: 2em;
+}
