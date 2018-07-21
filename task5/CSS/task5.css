@@ -62,7 +62,8 @@ body{
 }
 .main{
     margin-top: 4em;
-    margin-bottom: 1em;
+    margin-bottom: -5.2em;
+    height: auto !important;
 }
 .main .introduction{
     width: 100%;
@@ -181,6 +182,9 @@ body{
     margin-left: 1em;
     margin-right: 1em;
 }
+.push{
+    height:5.2em;
+}
 .footer{
     width: 100%;
     height: 4.2em;
@@ -218,5 +222,3 @@ body{
     justify-content: center;
     display: -webkit-flex;
 }
-
-
