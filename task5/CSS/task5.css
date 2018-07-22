@@ -26,8 +26,7 @@ body{
     margin: 0;
     margin-left: 2em;
     border-top: 0.15em solid #e1e5e7;
-    clear: left;
-    position: relative;
+
 }
 .hr4{
     display: inline-block;
