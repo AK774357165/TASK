@@ -36,7 +36,11 @@ body{
 }
 .head{
     line-height: 4.4em;
-    margin: auto;
+    margin: 0;
+}
+.row{
+    margin-left: 0;
+    margin-right: 0;
 }
 .nav{
     background-color: #54A7B2;
