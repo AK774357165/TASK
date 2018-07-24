@@ -9,14 +9,16 @@ body{
     padding: 0;
     border-top: 0.1em solid #E1E5E7;
 }
-.cutoffline2{
-    height: 4em;
+.divide{
+    display: inline-block;
+    height: 30px;
     width: 0;
     border: 0;
     margin: 0;
     padding: 0;
-    border-left: 0.1em solid #E1E5E7;
-    margin-right: -0.1em;
+    border-left: 1px solid #E1E5E7;
+    position: absolute;
+    top: 5px;
 }
 .header{
     height: 5.5em;
@@ -30,27 +32,38 @@ body{
 }
 .head{
     line-height: 4.4em;
+    margin: auto;
 }
 .nav{
-    height: 3em;
     background-color: #54A7B2;
     border-radius: 0.5em;
     padding: 0;
     margin: auto;
-    font-size: 1.5em
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
 }
-.subnav-left{
-    float: left;
+.nav .subnav-left{
+   padding: 0;
+}
+.nav .subnav-right{
+    padding: 0;
+ }
+.subnav-left a{
+    display: block;
     color: white;
-    text-align: center;
-}
-.subnav-right{
-    background-color: white;
     border-radius: 0.5em;
-    float: left;
-    color: #5FBFCD;
-    text-align: center;
+    background-color: #54A7B2;
+    text-decoration: none;
 }
+.subnav-right a{
+    display: block;
+    color: #54A7B2;
+    border-radius: 0.5em;
+    background-color: white;
+    text-decoration: none;
+}
+
 .position{
     height: 2.2em;
     width: 2.2em;
@@ -61,113 +74,74 @@ body{
     background-image: url(../images/css_sprites.png);
     background-position: -1em -7.7em;
 }
-
-.main{
-    height: 100em;
+.box{
+    margin-top:-4em;
+    height: 40px;
     width: 100%;
-    margin-top: 5.5em;
+    display: flex;
+    position: fixed;
     background-color: white;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.column{
+    flex: 1;
+    text-align: center;
 
 }
-.contain{
-    height: 4em;
-}
-.menu{
-    height: 4em;
-
-}
-.submenuleft{
-    float: left;
-    text-align: center;
-    font-size: 1.5em;
-    color: #999999;
-    padding-right: 3em;
-    line-height: 2.5em;
-    cursor: pointer;
-}
-.submenucenter{
-    float: left;
-    text-align: center;
-    font-size: 1.5em;
-    color: #999999;
-    padding-right: 3em;
-    line-height: 2.5em;
-    cursor: pointer;
-}
-.submenuright{
-    float: left;
-    text-align: center;
-    font-size: 1.5em;
-    color: #999999;
-    padding-right: 3em;
-    line-height: 2.5em;
-    cursor: pointer;
+.column a{
+    display: inline-block;
+    height: 100%; 
+    width: 100%;
+    line-height: 40px;    
+    color:#999999;
+    font-size: 13px;
+    text-decoration: none;
+    position: relative；
 }
 .arror{
-    width: 0.8em;
-    height: 0.8em;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
     background-image: url(../images/css_sprites.png);
-    background-position: -7.8em -4.9em;
-    float: right;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: -3em;
-    margin-right: 2.2em;
-}
-.subsubleft{
-    text-align: center;
-    font-size: 1.5em;
-    color: #999999;
-    padding-right: 3em;
-    line-height: 2.5em;
-    cursor: pointer;
-    display: block; 
-}
-.subsubsenter{
-    text-align: center;
-    font-size: 1.5em;
-    color: #999999;
-    padding-right: 3em;
-    line-height: 2.5em;
-    cursor: pointer;  
-    display: block; 
-}
-.subsubright{
-    text-align: center;
-    font-size: 1.5em;
-    color: #999999;
-    padding-right: 3em;
-    line-height: 2.5em;
-    cursor: pointer;
-    display: block; 
-}
-.subsubmenu{
-    display: block;
-}
-.leftmenu{
+    background-position: -78px -49px;
     position: absolute;
-    left: 0;
+    top: 16px;
+}
+.a1{
+    left: 30%;
+}
+.a2{
+    left: 63%;
+}
+.a3{
+    left: 93%;
+}
+.d1{
+    left:33.33%
+}
+.d2{
+    left: 66.66%;
+}
+.dropdown-content{
+    height: 40px;
+    background-color: white;
+    font-size: 13px;
+    color: #999999;
+    line-height: 40px;
+}
+.content{
     display: none;
 }
-.centermenu{
-    position: absolute;
-    left: 33.33%;
-    display: block;
+.content a:hover{
+    background-color: aliceblue;
 }
-.rightmenu{
-    position: absolute;
-    right: 0;
+.button:hover .content{
     display: block;
-}
-.submenuleft:hover .leftmenu{
-    display: block;
-}
-.submenuleft:hover .subsubleft{
-    display: block;
-}
-.submenuleft:hover{
-    background-color: lightgray;
 }
 
-
-
+.main{
+    margin-top: 9.5em;
+    height: 100em;
+    background-color: yellow;
+}
