@@ -22,8 +22,8 @@ body{
     top: 5px;
 }
 .header{
-    height: 5.5em;
     width: 100%;
+    height: 5.5em;
     background-color: #5fbfcd;
     position: fixed;
     top: 0;
@@ -31,6 +31,7 @@ body{
     display: -webkit-inline-flex;
     z-index: 1;
     right: 0;
+    margin: 0;
 }
 .head{
     line-height: 4.4em;
@@ -92,6 +93,8 @@ body{
     z-index: 1;
     font-weight: bold;
     right: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 .column{
     flex: 1;
@@ -152,6 +155,7 @@ body{
     margin-top: 9.5em;
     background-color: #ffffff;
 }
+
 .contain{
     width: 100%;
     padding: 0;
