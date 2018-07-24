@@ -191,12 +191,12 @@ body{
     display: -webkit-inline-flex;
 }
 .arrow2{
-    display: inline-block;
     width: 9px;
     height: 17px;
     background-image: url(../images/css_sprites.png);
     background-position: -122px -50px;
     margin-left: 10px;
+    float: right;
 }
 .loc{
     display: inline-block;
