@@ -12,15 +12,14 @@ body{
     border-top: 0.1em solid #E1E5E7;
 }
 .divide{
-    display: inline-block;
     height: 30px;
     width: 0;
     border: 0;
     margin: 0;
     padding: 0;
     border-left: 1px solid #E1E5E7;
-    position: absolute;
-    top: 5px;
+    float: right;
+    margin-top: 5px;
 }
 .header{
     width: 100%;
@@ -116,28 +115,16 @@ body{
     text-decoration: none;
 }
 .arror{
-    display: inline-block;
+    display: block;
     width: 8px;
     height: 8px;
     background-image: url(../images/css_sprites.png);
     background-position: -78px -49px;
-    position: absolute;
-    top: 16px;
-}
-.a1{
-    left: 30%;
-}
-.a2{
-    left: 63.5%;
-}
-.a3{
-    left: 96%;
-}
-.d1{
-    left:33.33%
-}
-.d2{
-    left: 66.66%;
+    float: right;
+    margin-right: 10px;
+    margin-left: -10px;
+    margin-top: 15px;
+
 }
 .dropdown-content{
     height: 40px;
