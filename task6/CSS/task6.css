@@ -154,8 +154,8 @@ body{
 }
 .row1 .line1{
     margin-top: 15px;
-    margin-left: 10%;
-    font-size: 12px;
+    margin-left: 16px;
+    font-size: 13px;
     color: #999999;
     padding: 0;
     float: left;
@@ -166,7 +166,7 @@ body{
     height: 12px;
     background-image: url(../images/css_sprites.png);
     background-position: -10px -119px;
-    margin-right: 18px;
+    margin-right: 8px;
 }
 .row2{
     margin-top: 5px;
@@ -178,8 +178,9 @@ body{
     color: black;
     padding: 0;
     text-align: left;
-    margin-left: 10%;
+    margin-left: 40px;
 }
+
 .row2 .line2{
     font-size: 14px;
     color: red;
@@ -207,14 +208,14 @@ body{
     height: 11px;
     background-image: url(../images/css_sprites.png);
     background-position: -92px -77px;
-    margin-right: 18px;
+    margin-right: 8px;
 }
 .row3{
     padding: 0;
 }
 .row3 .line1{
     padding: 0;
-    margin-left: 10%;
+    margin-left: 16px;
     font-size: 12px;
     color: #999999;
     margin-bottom: 15px;
