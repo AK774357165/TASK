@@ -5,6 +5,8 @@ body{
 }
 .container-fluid{
     padding: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 .cutoffline{
     height: 0;
@@ -149,6 +151,8 @@ body{
 .main{
     margin-top: 9.5em;
     background-color: #ffffff;
+    margin-left: 0;
+    margin-right: 0;
 }
 .content-left{
     padding: 0;
