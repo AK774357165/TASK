@@ -152,9 +152,10 @@ body{
 }
 .content-left{
     padding: 0;
-    margin-left: 5%;
+    margin-left: 10%;
     margin-top: 10px;
     margin-bottom: 10px;
+    left: -20px;
 }
 .content-right{
     padding: 0;
