@@ -3,6 +3,9 @@ body{
     font-size: 62.5%;
 
 }
+.container-fluid{
+    padding: 0;
+}
 .cutoffline{
     height: 0;
     width: 100%;
@@ -147,18 +150,36 @@ body{
     margin-top: 9.5em;
     background-color: #ffffff;
 }
-
-.contain{
-    width: 100%;
+.content-left{
     padding: 0;
+    margin-left: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-.row1 .line1{
-    margin-top: 15px;
-    margin-left: 16px;
+.content-right{
+    padding: 0;
+    height: 66px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: absolute;
+    right: 0;
+    align-items: center;
+    display: -webkit-inline-flex;
+}
+.line1{
     font-size: 13px;
     color: #999999;
     padding: 0;
-    float: left;
+    text-align: left;
+}
+.line2{
+    font-size: 12px;
+    color: #000000;
+    padding: 0;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 .calendar{
     display: inline-block;
@@ -168,60 +189,34 @@ body{
     background-position: -10px -119px;
     margin-right: 8px;
 }
-.row2{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-weight: bold;
+.null{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
 }
-.row2 .line1{
-    font-size: 13px;
-    color: black;
-    padding: 0;
-    text-align: left;
-    margin-left: 40px;
-}
-
-.row2 .line2{
-    font-size: 14px;
-    color: red;
-    padding: 0;
-    text-align: right;
-    position: absolute;
-    right: 10px;
-
-}
-.line2 div{
-    padding: 0;
-    align-items: center;
-    display: -webkit-inline-flex;
+.loc{
+    display: inline-block;
+    width: 12px;
+    height: 11px;
+    background-image: url(../images/css_sprites.png);
+    background-position: -90.5px -77px;
+    margin-right: 8px;
 }
 .arrow2{
     width: 9px;
     height: 17px;
     background-image: url(../images/css_sprites.png);
     background-position: -122px -50px;
-    margin-left: 10px;
-    float: right;
-    margin-top: 2px;
-    margin-right: 2%;
+    float: left;
+    margin-left: 8px;
+    margin-top: 1px;
 }
-.loc{
-    display: inline-block;
-    width: 10px;
-    height: 11px;
-    background-image: url(../images/css_sprites.png);
-    background-position: -92px -77px;
-    margin-right: 8px;
-}
-.row3{
-    padding: 0;
-}
-.row3 .line1{
-    padding: 0;
-    margin-left: 16px;
-    font-size: 12px;
-    color: #999999;
-    margin-bottom: 15px;
+.price {
+    float: left;
+    font-size: 14px;
+    color: #e63b0e;
+    font-weight: bold;
 }
 .push{
     height: 50px;
