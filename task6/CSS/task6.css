@@ -180,10 +180,11 @@ body{
     text-align: left;
 }
 .row2 .line2{
-    font-size: 13px;
+    font-size: 14px;
     color: red;
     padding: 0;
     text-align: right;
+
 }
 .line2 div{
     padding: 0;
@@ -197,6 +198,7 @@ body{
     background-position: -122px -50px;
     margin-left: 10px;
     float: right;
+    margin-top: 2px;
 }
 .loc{
     display: inline-block;
