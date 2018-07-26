@@ -1,0 +1,112 @@
+body{
+    font-weight: bold;
+}
+.head{
+    width: 100%;
+    height: 34px;
+    background-color: rgb(41, 189, 224);
+    position: fixed;
+    top: 0px;
+}
+.head a{
+    display: block;
+    width: 17px;
+    height: 14px;
+    background-image: url(../image/css_sprites.png);
+    background-position: -295px -186px;
+    margin-top: 10px;
+    margin-left: 11px;
+}
+.button-container a:hover{
+    text-decoration: none;
+    color: white;
+    background-color: lightblue;
+}
+.main{
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    margin-top: 34px;
+    height: 100vh;
+    padding-top: 12px;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+.lastgame{
+    width: 100%;
+    height: 57px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(222, 222, 222);
+}
+.lastgame p{
+    display: inline-block;
+    margin: 0;
+    line-height: 55px;
+    font-size: 15px;
+    color: rgb(158, 158, 158);
+}
+.arrow{
+    width: 12px;
+    height: 20px;
+    background-image: url(../image/css_sprites.png);
+    background-position: -383px -10px;
+    margin-left: -22px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 16px;
+}
+.content{
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    margin-top: 12px;
+    border: 2px  solid rgb(222, 222, 222);
+}
+.topic{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    border-bottom:1px solid rgb(253, 220, 161);
+    color: rgb(251, 180, 53);
+}
+.button-container{
+    margin-top: 14px;
+
+    position: relative;
+}
+.butn{
+    display: block;
+    width: 80%;
+    height: 67px;
+    line-height: 67px;
+    background-color: rgb(105, 209, 233);
+    border: 1px solid rgb(235, 249, 252);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button-container p{
+    margin-top: 13px;
+    margin-bottom: 13px;
+    font-size: 12px;
+    color: rgb(154, 154, 154);
+}
+.dot{
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 50%;
+}
+.a1{
+    background-color: rgb(105, 209, 233);
+}
+.jump{
+    display: block;
+    width: 14px;
+    height: 28px;
+    background-image: url(../image/css_sprites.png);
+    background-position: -10px -309px;
+    position: absolute;
+    right: 5px;
+    top: 37%;
+}

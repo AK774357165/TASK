@@ -1,0 +1,23 @@
+.header{
+    height: 34px;
+    width: 100%;
+    background-color: rgb(41, 189, 224);
+    position: fixed;
+    top: 0;
+}
+.title{
+    color: white;
+    font-size: 12px;
+    display: inline-block;
+    line-height: 34px;
+}
+.menu{
+    height: 20px;
+    width: 19px;
+    background-image: url(../image/css_sprites.png);
+    background-position: -314px -267px;
+    float: left;
+    margin-top: 7px;
+    margin-left: 11px;
+    margin-right: -11px;
+}
