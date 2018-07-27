@@ -97,9 +97,11 @@ body{
     background-color: rgb(240, 240, 240);
     border-radius: 50%;
 }
-.a1{
+.dot:hover{
     background-color: rgb(105, 209, 233);
 }
+
+    
 .jump{
     display: block;
     width: 14px;
