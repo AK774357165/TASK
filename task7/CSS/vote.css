@@ -23,6 +23,17 @@
     margin-left: 11px;
     margin-right: -30px;
 }
+.close{
+    height: 18px;
+    width: 18px;
+    background-image: url(../image/css_sprites.png);
+    background-position: -44px -309px;
+    float: right;
+    margin-top: 8px;
+    margin-right: 12px;
+    margin-left: -30px;
+    
+}
 .main{
     margin-top: 34px;
     background-color: rgb(41, 189, 224);   
