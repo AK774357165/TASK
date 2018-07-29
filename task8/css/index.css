@@ -168,7 +168,7 @@
     background-position: -466px -156px;
     position: absolute;
     top: 68px;
-    left: -34px;
+    left: -10;
 }
 .circle{
     width: 70px;
@@ -179,7 +179,7 @@
     position: absolute;
     top: 50px;
     border: 1px solid rgb(222, 222, 222);
-    left: 0;
+    left: 35px;
 }
 .circle span{
     color: rgb(41, 176, 120);
@@ -192,7 +192,7 @@
     display: inline-block;
     position: absolute;
     top: 67px;
-    left: 83px;
+    left: 110px;
     font-size: 12px;
     color: rgb(153, 153, 153);
 }
