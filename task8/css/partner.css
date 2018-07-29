@@ -1,0 +1,76 @@
+.head-img{
+    width: 100vw;
+    height: 12.92vw;
+    background-image: url(../img/company_06.jpg);
+    background-size: 100%;
+}
+.main{
+    padding-bottom: 230px;
+}
+.line1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+.line1 .par-com{
+    color: rgb(41, 176, 120);
+}
+
+.left-bar{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    background-color: white;
+    border: 1px solid rgb(222, 222, 222);
+    padding-bottom: 40px;
+}
+.left-bar h4{
+    font-weight: bold;
+    padding-top: 21px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgb(222, 222, 222);
+    text-align: center;
+}
+.cpy{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 0;
+    border: none;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1.5px solid rgb(255, 101, 14);
+    display: inline-block;
+    margin-left: 35%;
+}
+.company-name{
+    font-size: 14px;
+    color: rgb(41, 176, 120);
+    display: inline-block;
+}
+.main-text{
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+}
+.main-text-top{ 
+    border: 1px solid rgb(222, 222, 222);
+    background-color: white;
+}
+.cpy-logo{
+    width: 220px;
+    height: 150px;
+    background-image: url(../img/company.jpg);
+    background-position: center center;
+    float: left;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+.cpy-brief{
+    display: inline-block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: white;
+}
