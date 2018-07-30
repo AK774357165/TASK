@@ -21,14 +21,15 @@
     height: auto;
     padding: 0;
     background-color: white;
-    border: 1px solid rgb(222, 222, 222);
+    box-shadow: 0 0 3px rgb(222, 222, 222);
     padding-bottom: 40px;
+    margin-bottom: 30px;
 }
 .left-bar h4{
     font-weight: bold;
     padding-top: 21px;
     padding-bottom: 24px;
-    border-bottom: 1px solid rgb(222, 222, 222);
+    box-shadow: 0 0 3px rgb(222, 222, 222);
     text-align: center;
 }
 .cpy{
@@ -44,12 +45,19 @@
     background-color: white;
     border: 1.5px solid rgb(255, 101, 14);
     display: inline-block;
-    margin-left: 35%;
+}
+.cpy:hover .dot{
+    background-color: rgb(249, 163, 114);
+}
+.cpy:hover .company-name{
+    color: rgb(255, 101, 14);
 }
 .company-name{
+    width: 5em;;
     font-size: 14px;
     color: rgb(41, 176, 120);
     display: inline-block;
+    text-align: left;
 }
 .main-text{
     font-size: 14px;
@@ -59,18 +67,36 @@
     border: 1px solid rgb(222, 222, 222);
     background-color: white;
 }
+
 .cpy-logo{
-    width: 220px;
-    height: 150px;
+    width: 160px;
+    height: 80px;
     background-image: url(../img/company.jpg);
     background-position: center center;
-    float: left;
-    background-repeat: no-repeat;
-    background-color: white;
+    background-repeat: no-repeat; 
+    display: inline-block;
+}
+.company-logo-box{
+    padding: 0;
+}
+.brief-box{
+    background-color: white; 
+    padding: 20px 5% 20px 5%;  
+    box-shadow: 0 0 3px rgb(222, 222, 222);
 }
 .cpy-brief{
     display: inline-block;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    text-indent: 2em;
+    
+}
+.main-text-bottom{
+    clear: both;
     background-color: white;
+    padding: 0 5% 180px 5%;
+    box-shadow: 0 0 3px rgb(222, 222, 222);
+}
+.main-text-bottom p{
+    padding-top: 40px;
+    margin: 0;
+    text-indent: 2em;
 }
