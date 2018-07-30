@@ -2,14 +2,32 @@
     padding-top: 30px;
     padding-bottom: 240px;
 }
+.np{
+    padding: 0;
+}
+.nm{
+    margin: 0;
+}
+.npl{
+    padding-left: 0;
+    padding-top: 47px;
+}
+.bd{
+    border: 0.25px solid rgb(237, 241, 242);
+}
+.bd2{
+    border-left: 0.25px solid rgb(237, 241, 242);
+    border-bottom: 0.25px solid rgb(237, 241, 242);
+}
+.bd3{
+    border-left: 0.25px solid rgb(237, 241, 242);
+    border-top: 0.25px solid rgb(237, 241, 242);
+}
 .job{
     color: rgb(41, 176, 120);
 }
 .line1{
     padding-bottom: 33px;
-}
-.line2{
-    padding: 0;
 }
 .line2 h5{
     padding-top: 32px;
@@ -17,18 +35,26 @@
     font-weight: bold;
     margin: 0;
 }
-.direction{
-    padding: 24px 0 24px 0;
-}
-.direction span{
+.left{
+    color: rgb(153, 153, 153);
+    margin-top: 24px;
+    margin-right: 15px;
     font-size: 12px;
+    font-weight: bold;
+}
+.right{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: -15px;
 }
 .jobs{
+    font-size: 12px;
     height: 1.5em;
-    padding-left: 2px;
+    line-height: 1.5em;
     padding-right: 2px;
     color: black;
-    margin-left: 25px;
+    margin-left: 15px;
+    font-weight: bold;
     display: inline-block;
 }
 .jobs:hover{
@@ -43,10 +69,15 @@
     width: 100%;
     height: 0;
 }
+.line3 h5{
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 .job-info{
-    margin-top: 47px;
     padding-left: 0;
     background-color: white;
+    box-shadow: 0 0 4px rgb(237, 241, 242);
 }
 .job-brief{
     height: auto;
@@ -55,20 +86,84 @@
 .photo{
     width: 139px;
     height: 139px;
-    padding: 0;
     background-image: url(../img/job.jpg);
-    margin-left: 11px;
-    margin-top: 20px;
+    margin-top: 20px; 
 }
-.brief{
-    padding-right: 0;
+.brief h5{
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 .brief p{
-    font-size: 12px;
+    font-size: 10px;
 }
-.job-name{
-    padding-top: 20px;
-    padding-bottom: 15px;
-    font-size: 14px;
+.item{
+    height: 40px;
+    color: rgb(153, 153, 153);
+    line-height: 40px;
+    font-size: 10px;
+    display: inline-block;
     font-weight: bold;
+}
+.item2{
+    width: 100%;
+    height: 120px;
+    color: rgb(153, 153, 153);
+    line-height: 120px;
+    font-size: 10px;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+}
+@media (max-width:768px){
+    .item2{
+        width: 100%;
+        height: 40px;
+        color: rgb(153, 153, 153);
+        line-height: 40px;
+        font-size: 10px;
+        display: inline-block;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+.item3{
+    width: 100%;
+    height: 40px;
+    color: black;
+    line-height: 40px;
+    font-size: 10px;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 15px;
+}
+.item3 div{
+    float: right;
+
+}
+.star{
+    width: 16px;
+    height: 19px;
+    background-image: url(../img/css_sprites.png);
+    background-position: -458px -275px;
+    display: inline-block;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+.subline2{
+    color: red;
+    display: inline-block;
+    font-size: 10px;
+}
+.subline2 span{
+    color: black;
+}
+.per-num{
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color:black;
+    font-weight: bold;
+}
+.per-num span{
+    color: red;
 }
