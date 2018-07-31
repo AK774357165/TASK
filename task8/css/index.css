@@ -24,6 +24,7 @@
     line-height: 39px;
 }
 .logo-box{
+    padding-right: 10px;
     line-height: 39px;
     float: right;
 }
@@ -47,21 +48,9 @@
 .log-in{
     font-size: 12px;
     line-height: 39px;
-    float: right;
-    margin-left: 10px;
+    display: none;
 }
-@media (max-width:770px){
-    .tel{
-        opacity: 0;
-    }
-    .logo-box{
-        display: none;
-    }
-    .log-in{
-        position: absolute;
-        right: 5%;
-    }
-}
+
 .row2{
     height: 99px;
 }
@@ -77,8 +66,8 @@
     z-index: 99;
 }
 .menu1{
-    line-height: 99px;
-    width: 60px;
+    line-height: 97px;
+    width: 65px;
     font-size: 15px;
     display: inline-block;
     color: white;
@@ -88,11 +77,11 @@
     display: none;
 }
 .menu1:hover{
-        border-bottom: 2px solid rgb(255, 255, 255);
+        border-bottom: 3px solid rgb(255, 255, 255);
         color: white;
         text-decoration: none;
 }
-@media (max-width:770px){ 
+@media (max-width:500px){ 
     .menu-box{
         display: none;
     }
@@ -101,9 +90,9 @@
         height: 24px;
         background-image: url(../img/b9a0b9e3-1ce5-4f1a-89a9-0b637909c63f_03.png);
         position: absolute;
-        top: 10%;
+        top: 12%;
         right: 0;
-        margin-right: 5%;
+        margin-right: 8%;
     }
     .content{
         display: none;
@@ -119,6 +108,15 @@
     }
     .content:hover{
         background-color: rgb(71, 213, 154);
+    }    
+    .tel{
+        opacity: 0;
+    }
+    .logo-box{
+        display: none;
+    }
+    .log-in{
+        display: block;
     }
 }
 .dropdown-menu{
@@ -150,7 +148,7 @@
     margin-bottom: 33px;
 }
 .text{
-    font-size: 16px;
+    font-size: 12px;
     color: rgb(153, 153, 153);
     margin-top: 32px;
     display: inline-block;
@@ -158,11 +156,17 @@
 .home-tag{
     padding: 70px 0 58px 0;
 }
-.pre-num{
-    border-left: 2px rgb(222, 222, 222) dashed;    
-    color: rgb(41, 176, 120);    
+.pre-num{   
+    color: rgb(51, 153, 102);   
     padding-top: 66px;
     padding-bottom: 66px;
+}
+.divided{
+    width: 1px;
+    height: 264px;
+    background-image: url(../img/技能树首页_03.png);
+    float: left;
+    margin-top: -66px;
 }
 .total{
     margin-bottom: 31px;
@@ -209,7 +213,7 @@
     left: 25px;
 }
 .circle span{
-    color: rgb(41, 176, 120);
+    color: rgb(51, 153, 102);
     position: absolute;
     top: 25px;
     left: 30px;
@@ -239,7 +243,7 @@
     background-color: white;
     padding: 20px 30px 20px 30px;
     margin-top: 72px;
-    box-shadow: 0 0 2px rgb(222, 222, 222);
+    box-shadow: 0 0 3px rgb(222, 222, 222);
 }
 .gd-st h4{
     margin-top: 36px;
@@ -276,7 +280,7 @@
     display: inline-block;
 }
 .dots:hover{
-    background-color: rgb(41, 176, 120);
+    background-color: rgb(51, 153, 102);
 }
 .row6{
     margin-top: 80px;
@@ -362,12 +366,20 @@ ul{
     width: 18%;
     margin-left: 1%;
     margin-right: 1%;
-    font-weight: bold;
     list-style: none;
     font-size: 12px;
     color: rgb(153, 153, 153);
     padding-top: 3px;
     padding-bottom: 3px;
+}
+.link span{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: rgb(153, 153, 153);
+    margin-right: 8px;
+    margin-bottom: 3px;
 }
 h4{
     font-weight: bold;
@@ -379,22 +391,26 @@ h4{
     margin: auto;
 }
 .link p:hover{
-    border-bottom: 1px solid rgb(41, 176, 120);
+    border-bottom: 1px solid rgb(51, 153, 102);
 }
 .footer-down{
     height: auto;
     width: 100%;
-    background-color: rgb(41, 176, 120);
+    background-color: rgb(51, 153, 102);
     padding-top: 38px;
 }
 .row7{
     color: white;
 }
 .little{
+    height: 1.5em;
     font-size: 12px;
-    float: left;
     padding: 0;
     margin-bottom: 20px;
+    display: inline-block;
+}
+.little:hover{
+    border-bottom: 1px solid white;
 }
 .qrcode{
     width: 92px;
