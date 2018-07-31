@@ -24,12 +24,14 @@
     box-shadow: 0 0 3px rgb(222, 222, 222);
     padding-bottom: 40px;
     margin-bottom: 30px;
+    margin-top: -10px;
+    border-radius: 4px;
 }
 .left-bar h4{
     font-weight: bold;
     padding-top: 21px;
     padding-bottom: 24px;
-    box-shadow: 0 0 3px rgb(222, 222, 222);
+    border-bottom: 1px solid rgb(222, 222, 222);
     text-align: center;
 }
 .cpy{
@@ -79,10 +81,14 @@
 .company-logo-box{
     padding: 0;
 }
-.brief-box{
-    background-color: white; 
-    padding: 20px 5% 20px 5%;  
+.right-box{
+    background-color: white;
+    border-radius: 4px;
     box-shadow: 0 0 3px rgb(222, 222, 222);
+}
+.brief-box{   
+    padding: 20px 5% 20px 5%;  
+    border-bottom: 1px solid rgb(222, 222, 222);
 }
 .cpy-brief{
     display: inline-block;
@@ -90,10 +96,8 @@
     
 }
 .main-text-bottom{
-    clear: both;
-    background-color: white;
+    clear: both;    
     padding: 0 5% 180px 5%;
-    box-shadow: 0 0 3px rgb(222, 222, 222);
 }
 .main-text-bottom p{
     padding-top: 40px;

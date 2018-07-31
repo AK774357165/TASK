@@ -82,6 +82,14 @@
         text-decoration: none;
 }
 @media (max-width:500px){ 
+    .header-bottom{
+        height: 60px;
+        width: 100%;
+        background-color: rgb(41, 176, 120);
+    }
+    .logo-head{
+        top:70px;
+    }
     .menu-box{
         display: none;
     }
@@ -90,7 +98,7 @@
         height: 24px;
         background-image: url(../img/b9a0b9e3-1ce5-4f1a-89a9-0b637909c63f_03.png);
         position: absolute;
-        top: 11.5%;
+        top: 59px;
         right: 0;
         margin-right: 8%;
     }
@@ -117,6 +125,8 @@
     }
     .log-in{
         display: block;
+        position: relative;
+        top: 40px;
     }
 }
 .dropdown-menu{
@@ -289,43 +299,6 @@
     margin-top: 40px;
     margin-bottom: 60px;
 }
-.company{  
-    padding: 0;
-    background-color: white;
-    height: 130px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-.shadow-box{    
-    
-    width: 100%;
-    box-shadow: 0 0 2px rgb(222, 222, 222);
-    background-color: white;
-}
-.l-end{
-    margin-left: 0;
-}
-.r-end{
-    margin-right: 0;
-}
-.company:hover{
-    box-shadow: 0 0 15px rgb(200, 200, 200);
-    z-index: 999;
-}
-
-@media (max-width:992px){
-    .company{  
-        margin-bottom: 40px;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .shadow-box{
-        width: 100%;
-        box-shadow: 0 0 0;
-        background-color: rgb(250, 250, 250);
-    }
-
-}
 .company-logo{
     background-image: url(../img/css_sprites.png);    
     display: inline-block;
@@ -333,6 +306,36 @@
     top: 50%;
     transform: translateY(-50%)
 }
+.company-box{
+    height: 130px;
+    box-shadow: 0 0 2px rgb(250, 250, 250);
+}
+.company{
+    height: 130px;
+    width: 20%;
+    float: left;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.company:hover{
+    box-shadow: 0 0 10px rgb(222, 222, 222);
+    z-index: 9999;
+}
+@media (max-width:992px){
+    .company{
+        height: 130px;
+        width: 100%;
+        float: none;
+        background-color: white;
+        margin-bottom: 20px;
+    }
+    .company-box{
+        height: auto;
+    }
+}
+
 .logo1{    
     width: 144px;
     height: 52px;
