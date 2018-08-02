@@ -56,22 +56,21 @@
     position: relative;
 }
 .nav-box{
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 31px;
     position: absolute;
     right: 0;
 }
 .nav-bar{
-    width: auto;
-    height: 47px;
-    line-height: 47px;
+    line-height: 35px;
     padding-left:17px;
     padding-right: 17px;
-    margin-left: 60px;
-    background-color: #ffffff;
-    color: #000000;
+    margin-left: 40px;
+    background-color: hsl(0, 0%, 100%);
+    color: #8a8a8a;
     font-size: 12px;
+    font-weight: bold;
     display: inline-block;
+    border: 0;
     border-radius: 5px;
     box-shadow: 1px 1px 3px #e6e6e6;
 }
@@ -80,10 +79,18 @@
     background-color: #f9f9f9;
 }
 .nav-bar:hover{
+    background-color: #6ab0f7;
+    color: #ffffff;
+}
+.nav-bar:active{
     background-color: #1d7ad9;
     color: #ffffff;
 }
-
+.nav-bar:focus{
+    outline: none;
+    background-color: #1d7ad9;
+    color: #ffffff;
+}
 .content-box{
     padding-bottom: 5px;
     display: none;
@@ -91,15 +98,15 @@
 .content{
     text-align: center;
     height: 25px;
-    width: 90%;
+    width: 95%;
     line-height: 25px;
     font-size: 12px;
-    color:  lightgray;
+    color: #8a8a8a;
     font-weight: bold;
     background-color: #ffffff;
     border-radius: 8px;
     margin: auto;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
 }
 @media (max-width:770px){
     .nav-bar{
@@ -116,7 +123,7 @@
     .sub-btn{
     width: 29px;
     height: 29px;
-    border-radius: 3px;
+    border-radius: 5px;
     background-image: url(../img/css_sprites\ .png);
     background-position: -122px -10px;
     position: absolute;
@@ -134,16 +141,250 @@
 }
 
 .main{
-    height: 100px;
+    height: auto;
+    padding-top: 35px;
+    padding-bottom: 54px;
     background-color: #ffffff;
 }
+.step{
+    width: 160px;
+    position: relative;
+    display: inline-block;
+    margin-right: -8px;
+}
+.pr-bar{
+    width: 160px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #cccccc;
+    display: inline-block; 
+    position: relative;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #cccccc; 
+    position: absolute; 
+    top: 6px;
+    left: 70px;
+}
+.circle span{
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    top: 3px;
+    left: 7px;
+}
+.step-no{
+    width: 60px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #cccccc;
+    margin: auto;
+    margin-top: 20px;
+}
+.step:hover .pr-bar{
+    background-color: #ff7f02;
+    z-index: 9;
+}
+.step:hover .circle{
+    width: 24px;
+    height: 24px;
+    background-color: #ff7f02;
+    top: 3px;
+    left: 68px;
+    z-index: 99;
+}
+.step:hover .circle span{
+    top: 5px;
+    left: 9px;
+}
+.step:hover .step-no{
+    color: #ff7f02;
+}
+@media (max-width:768px){
+    .step{
+        width: 90px;
+    }
+    .pr-bar{
+        width: 90px;
+    }
+    .circle{
+        left: 35px;
+    }
+    .main{
+        padding-top: 20px;
+    }
+    .step:hover .circle{
+        left: 35px;
+    }
+}
+@media (max-width:460px){
+    .step{
+        width: 65px;
+    }
+    .pr-bar{
+        width: 65px;
+    }
+    .circle{
+        left: 24px;
+    }
+    .step-no{
+        width: 50px;
+        font-size: 10px;
+    }
+    .main{
+        padding-top: 15px;
+    }
+    .step:hover .circle{
+        left: 22px;
+    }
+}
+.title .line{
+    width: 4px;
+    height: 21px;
+    border-radius: 3px;
+    background-color: #1d7ad9;
+    display: inline-block;
+    margin-right: 6px;
+}
+.title{
+    margin-top: 50px;
+    margin-bottom: 15px;
+    align-items: center;
+    display: -webkit-flex;
+}
+@media (max-width:768px){
+    .title{
+        margin-top: 30px;
+    }
+}
+.tips{
+    height: 21px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 21px;
+    display: inline-block;
+}
+.box{
+    width: 100%;
+    height: auto;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+.sub-menu{
+    height: 45px;
+    width: auto;
+    align-items: center;
+    display: -webkit-flex;
+}
+.sub-menu2{
+    height: 45px;
+    width: auto;
+    background-color: #f5f5f5;
+    align-items: center;
+    display: -webkit-flex;
+}
+.logo{
+    background-image: url(../img/css_sprites\ .png);
+    margin-left: 10px;
+}
+.lg1{
+    width: 19px;
+    height: 15px;
+    background-position: -87px -122px;
+    margin-right: 9px;
+}
+.lg2{
+    width: 22px;
+    height: 20px;
+    background-position: -10px -122px;
+    margin-right: 7px;
+}
+.lg3{
+    width: 15px;
+    height: 20px;
+    background-position: -52px -122px;
+    margin-right: 10px;
+}
+.sub-title{
+    font-size: 14px;
+    color: #1d7ad9;
+    font-weight: bold;  
+}
+.choose-box{
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    height: auto;
+    background-color: #fbfcff;
+    border: 1px solid #f5f5f5;
+}
+.submit-box{
+    width: 100%;
+    height: 286px;
+    background-color: #ffffff;
+    border: 1px solid #f5f5f5;
+}
+
 .foot-info{
     width: 100%;
-    height: 206px;
+    height: auto;
     background-color: #f9f9f9;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+.plat{
+    font-size: 14px;
+    color: #999999;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.link{
+    font-size: 12px;
+    color: #999999;
+    font-weight: bold;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+}
+.link:hover{
+    color: #1d7ad9;
+}
+.contact{
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 15px;
+}
+.way{
+    font-size: 12px;
+    height: 20px;
+    color: #999999;
+    font-weight: bold;
+    padding: 0;
+    text-align: left;
+}
+.qrcode{
+    padding: 0;
+    background-image: url(../img/css_sprites\ .png);
+    width: 92px;
+    height: 92px;
+    background-position: -10px -10px;
+    display: inline-block;
 }
 .foot-comp{
     width: 100%;
-    height: 33px;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #1d79d9
+}
+.foot-comp p{
+    font-size: 10px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 0;
 }
