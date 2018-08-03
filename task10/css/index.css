@@ -485,6 +485,17 @@ select{
     text-align: center;
     margin-top: 140px;
 }
+@media (max-width:455px){
+    .btn{
+        width: 120px;
+        height: 35px;
+        line-height: 21px;
+        margin-top: 90px;
+    }
+    .submit-box{
+        height: 200px;
+    }
+}
 .foot-info{
     width: 100%;
     height: auto;
@@ -508,6 +519,14 @@ select{
 }
 .link:hover{
     color: #1d7ad9;
+}
+.contact-box{
+    text-align: right;
+}
+@media (max-width:550px){
+    .contact-box{
+        text-align: left;
+    }
 }
 .contact{
     padding: 0;
