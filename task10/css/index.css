@@ -439,6 +439,9 @@ select{
     .lb2{
         display: -webkit-box;
     }
+    .inline-box{
+        width: 60%;
+    }
 }
 @media (max-width:768px){
     .radio-box{
@@ -447,9 +450,6 @@ select{
     }
     .label-box{
         align-items: flex-start;
-    }
-    .inline-box{
-        width: 80%;
     }
 }
 @media (max-width:550px){
@@ -461,11 +461,9 @@ select{
     }
     .selector{
         top: 10px
-    }
-}
-@media (max-width:460px){
+    }    
     .inline-box{
-        width: 70%;
+        width: 50%;
     }
 }
 .submit-box{
@@ -485,7 +483,7 @@ select{
     text-align: center;
     margin-top: 140px;
 }
-@media (max-width:455px){
+@media (max-width:550px){
     .btn{
         width: 120px;
         height: 35px;
