@@ -328,10 +328,11 @@
     color: #666666;
     background-color: #fbfcff;
     border: 1px solid #f5f5f5;
-    padding-left: 45px;
+    padding-left: 5%;
     margin-left: 0;
     align-items: center;
     display: -webkit-flex;
+    position: relative;
 }
 .radio-box{
     height: 18px;
@@ -385,9 +386,7 @@
     align-items: center;
     display: -webkit-flex;
 }
-.aa{
-    margin-bottom: 20px;
-}
+
 select{
     border: none;
     outline: none;
@@ -429,6 +428,12 @@ select{
     float: none;
     margin-right: 60px;
 }
+.inline-box{
+    width: 100%;
+}
+.mar{
+    margin-right: 30px;
+}
 @media (max-width:992px){
     .lb2{
         display: -webkit-box;
@@ -442,7 +447,9 @@ select{
     .label-box{
         align-items: flex-start;
     }
-
+    .inline-box{
+        width: 80%;
+    }
 }
 @media (max-width:550px){
     .selector2{
@@ -451,8 +458,13 @@ select{
     .radio-box{
         margin-bottom: 10px;
     }
-    .aa{
-        margin-bottom: 60px;
+    .selector{
+        top: 10px
+    }
+}
+@media (max-width:460px){
+    .inline-box{
+        width: 70%;
     }
 }
 .submit-box{
@@ -461,7 +473,17 @@ select{
     background-color: #ffffff;
     border: 1px solid #f5f5f5;
 }
-
+.btn{
+    width: 180px;
+    height: 45px;
+    line-height: 31px;
+    border-radius: 5px;
+    background-color: #e15053;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 140px;
+}
 .foot-info{
     width: 100%;
     height: auto;
