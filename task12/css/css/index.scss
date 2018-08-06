@@ -2,3 +2,186 @@ $blue:#5fc0cd;
 $gray:#999999;
 $red:#e26163;
 $black:#333333;
+$width:100%;
+@mixin logo {
+    background-image: url(../../img/css_sprites.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+@mixin font-style {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+}
+@mixin btn {
+    width: 40%;
+    height: 44px;
+    line-height: 44px;
+    display: inline-block;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.divider{
+    height: 0;
+    width: $width;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #e1e5e7;
+}
+body{
+    margin: 0;
+    .header{
+        width: $width;
+        height: 40px;
+        background-color: $blue;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        .btn-left{
+            @include logo();
+            width: 10px;
+            height: 17px;
+            background-position: -10px -10px;
+            margin-top: 11px;
+            margin-left: 17px;
+            float: left;
+        }
+        .title{
+            @include font-style();
+            font-size: 16px;
+            display: inline-block;
+            margin-top: 9px;
+        }
+    }
+    .main{
+        width: $width;
+        margin-top: 40px;
+        .head-bg{
+            width: $width;
+            height: 164px;
+            background-image: url(../../img/task5-1_03.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            align-items: center;
+            display: -webkit-flex;
+            .head{
+                width: 85px;
+                height: 85px;
+                background-image: url(../../img/task5-6_03.png);
+                display: inline-block;
+                margin-left: 30px;
+            }
+            .name{
+                @include font-style();
+                margin-left: 20px;
+                margin-top: -20px;
+                span{
+                    font-size: 13px;
+                    margin-left: 15px;
+                }
+            }
+            .loc{
+                @include logo();
+                background-position: -31px -47px;
+                position: absolute;
+                top: 137px;
+                left: 137px;
+                span{
+                    @include font-style();
+                    font-size: 10px;
+                    position: relative;
+                    top: -8px;
+                    left: 17px;
+                }
+            }
+        }
+        .line{
+            width: $width;
+            height: 50px;
+            align-items: center;
+            display: -webkit-flex;
+            .divide{
+                @include logo();
+                width: 2px;
+                height: 13px;
+                background-position: -72px -10px;
+                margin-left: 15px;
+                margin-right: 13px;
+            }
+            span{
+                font-size: 14px;
+                font-weight: bold;
+                color: $black;
+                display: inline-block;
+            }
+            .item{
+                width: 5em;
+                font-size: 14px;
+                font-weight: bold;
+                color: $gray;
+                display: inline-block;
+                margin-left: 0;
+            }
+            .item-content{
+                display: inline-block;
+                margin-right: 10px;
+                flex: 1;
+            }
+            .price{
+                color: $red;
+            }
+            .star{
+                @include logo();
+                width: 12px;
+                height: 12px;
+                margin-right: 10px;
+                background-position: -40px -10px;
+            }
+            .divider2{
+                @include logo();
+                width: 2px;
+                height: 26px;
+                margin-left: 10px;
+                margin-right: 10px;
+                background-position: -10px -47px;
+            }
+        }
+        .box{
+            padding-left: 18px;
+            height: auto;
+        }
+        .line2{
+            height: auto;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .push{
+            height: 100px;
+            margin-bottom: -100px;
+        }
+    }
+    .footer{
+        width: $width;
+        height: 100px;
+        position: fixed;
+        background-color: #ffffff;
+        bottom: 0;
+        .btn1{
+            @include btn();
+            border: 2px solid $blue;
+            color: $blue;
+            float: left;
+            margin-left: 6%;
+        }
+        .btn2{
+            @include btn();
+            background-color: $blue;
+            color: #ffffff;
+            border: 2px solid $blue;
+            float: right;
+            margin-right: 6%;
+        }
+    }
+}
