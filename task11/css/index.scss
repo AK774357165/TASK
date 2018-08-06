@@ -1,0 +1,50 @@
+$blue:#5fc0cd;
+$gray:#eff0f4;
+$width:100%;
+@mixin fontstyle {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+}
+body{
+    margin: 0;
+   .header{
+        height: 90px;
+        width: $width;
+        background-color: $blue;
+        text-align: center;
+        .btn-left{
+            @include fontstyle();
+            position: absolute;
+            left: 0;
+            margin-left: 30px;
+            margin-top: 33px;
+        }
+        .title{
+            @include fontstyle();
+            font-size: 20px;
+            margin-top: 32px;
+        }
+        .btn-right{
+            @include fontstyle();
+            position: absolute;
+            right: 0;
+            margin-right: 30px;
+            margin-top: 33px;
+        }
+    } 
+    .main{
+        width: $width;
+        background-color: $gray;
+        height: 100vh;
+        padding-top: 16px;
+        .input-bac{
+            width: $width;
+            height: 100px;
+            background-color: #ffffff;
+            margin-bottom: 16px;
+        }
+    }
+   
+}
