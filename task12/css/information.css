@@ -104,40 +104,39 @@ body {
           border-top: none; }
       body main .drop-menu-box .drop-menu:hover .content-box {
         display: block; }
-    body main .row {
-      height: auto;
-      background-color: #ffffff; }
-      body main .row .left {
+    body main a {
+      display: block; }
+      body main a .left {
         padding-top: 5px;
         padding-bottom: 5px;
         margin-left: 8%;
         display: inline-block; }
-        body main .row .left .item1 {
+        body main a .left .item1 {
           background-image: url(../img/css_sprites2.png);
           background-repeat: no-repeat;
           display: inline-block;
           width: 12px;
           height: 12px;
           background-position: -10px -119px; }
-        body main .row .left .item2 {
+        body main a .left .item2 {
           background-image: url(../img/css_sprites2.png);
           background-repeat: no-repeat;
           display: inline-block;
           width: 10px;
           height: 11px;
           background-position: -92px -77px; }
-        body main .row .left .item-content1 {
+        body main a .left .item-content1 {
           font-size: 12px;
           font-weight: bold;
           color: #999999;
           font-weight: normal;
           margin-left: 5px; }
-        body main .row .left .item-content2 {
+        body main a .left .item-content2 {
           font-size: 12px;
           font-weight: bold;
           color: #333333;
           margin-left: 16px; }
-      body main .row .right {
+      body main a .right {
         float: right;
         font-size: 12px;
         font-weight: bold;
