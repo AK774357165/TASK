@@ -3,16 +3,15 @@ $darkblue:#55a8b3;
 $gray:#999999;
 $lightgray:#e1e5e7;
 $red:#e63b0e;
-$black:#333333;
+$black:#333333;   
 @mixin font-style {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
-
 }
 @mixin btn {
     outline: none;
     width: 50%;
-    height: 35px;
+    height: 33px;
     line-height: 35px;
     color: #ffffff;
     border-radius: 5px;
@@ -25,68 +24,203 @@ $black:#333333;
     background-repeat: no-repeat;
     display: inline-block;
 }
-header{
-    align-items: center;
-    .btn-box{
-        width: 40%;
-        height: 35px;
-        border-radius: 5px;
-        background-color: $darkblue;
-        display: inline-block;
-        margin-top: 2px;
-        .btn1{
-            @include font-style();
-            @include btn();
-            float: left;
-        }  
-        .btn2{
-            @include font-style();
-            @include btn();
-            float: right;
-        }
-        .btn1:focus,.btn2:focus{
-            background-color: #ffffff;
-            color: $blue;
-        }
-    }
-    .btn-right{
-        @include logo();
-        width: 21px;
-        height: 22px;
-        background-position: -10px -77px;
-        position: absolute;
-        right: 0;
-        top: 8px;
-        margin-right: 15px;
-    }
-}
-main{
-    .drop-menu-box{
-        height: 40px;
+body{
+    margin: 0;
+    .divider{
+        height: 0;
+        width: 100%;
         padding: 0;
-        display: flex;
-        .drop-menu{
-            width: 30%;
-            height: 40px;
-            line-height: 40px;
-            font-size: 12px;
-            color: $gray;
-            display: inline-flex;
-            flex-grow: 1;
-            justify-content: center;
-            border-bottom: 1px solid $lightgray;
-            position: relative;
-            .arrow{
-                @include logo();
-                width: 7px;
-                height: 4px;
-                background-position: -78px -51px;
-                position: absolute;
-                right: 10px;
-                top: 18px;
+        margin: 0;
+        border-top: 1px solid #e1e5e7;
+    }
+    header{
+        width: 100%;
+        height: 40px;
+        background-color: $blue;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        align-items: center;
+        z-index: 99;
+        .btn-box{
+            width: 40%;
+            height: 33px;
+            border-radius: 5px;
+            background-color: $darkblue;
+            display: inline-block;
+            margin-top: 3px;
+            .btn1{
+                @include font-style();
+                font-size: 14px;
+                @include btn();
+                float: left;
+            }  
+            .btn2{
+                @include font-style();
+                font-size: 14px;
+                @include btn();
+                float: right; 
+                background-color: #ffffff;
+                color: $blue;
+
             }
-            .divider1{
-                
+        }
+        .btn-right{
+            @include logo();
+            width: 21px;
+            height: 22px;
+            background-position: -10px -77px;
+            position: absolute;
+            right: 0;
+            top: 8px;
+            margin-right: 15px;
+        }
+    }
+    main{
+        margin-top: 40px;
+        .drop-menu-box{
+            height: 40px;
+            padding: 0;
+            display: flex;
+            .drop-menu{
+                @include font-style();
+                font-weight: normal;
+                line-height: 40px;
+                color: $gray;
+                flex:1;
+                border-bottom: 1px solid $lightgray;
+                position: relative;
+                text-align: center;
+                .arrow{
+                    @include logo();
+                    width: 7px;
+                    height: 4px;
+                    background-position: -78px -51px;
+                    position: absolute;
+                    right: 10px;
+                    top: 18px;
+                }
+                .divider1{
+                    width: 1px;
+                    height: 39px;
+                    background-image: url(../img/task5-2_03.png);   
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+                .content-box{
+                    display: none;
+                }
+                .content{
+                    background-color: #ffffff;
+                    border: 1px solid $lightgray;
+                    border-top: none;
+                } 
+            }
+            .drop-menu:hover .content-box{
+                    display: block;
+                }
+        }
+        .row{
+            height: auto;
+            background-color: #ffffff;
+            .left{
+                padding-top: 5px;
+                padding-bottom: 5px;
+                margin-left: 8%;
+                display: inline-block;
+                .item1{
+                    @include logo();
+                    width: 12px;
+                    height: 12px;
+                    background-position: -10px -119px;
+                }
+                .item2{
+                    @include logo();
+                    width: 10px;
+                    height: 11px;
+                    background-position: -92px -77px;
+                }
+                .item-content1{
+                    @include font-style();
+                    color: $gray;
+                    font-weight: normal;
+                    margin-left: 5px;
+                }
+                .item-content2{
+                    @include font-style();
+                    color: $black;
+                    margin-left: 16px;
+                }
+            }
+            .right{
+                float: right;
+                @include font-style();
+                color: $red;
+                margin-right: 10%;
+                margin-top: 25.5px;
+            }
+        }
+        .push{
+            height: 50px;
+            margin-bottom: -50px;
+        }
+    }
+    footer{
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        bottom: 0;
+        background-color: #f8fafb;
+        text-align: center;
+        .btn-home{
+            @include logo();
+            width: 24px;
+            height: 21px;
+            background-position: -78px -10px;
+            float: left;  
+            position: relative;
+            margin-top: 5px;
+            margin-left: 20%;
+            div{
+                width: 24px;
+                margin-left: 1px;
+                @include font-style();
+                color: $blue;
+                position: absolute;
+                top: 25px;
+            }
+        }
+        .btn-center{
+            @include logo();
+            width: 48px;
+            height: 48px;
+            background-position: -10px -10px;
+            .msg{
+                @include logo();
+                width: 24px;
+                height: 24px;
+                background-position: -119px -10px;
+                margin-top: 12px;
+                margin-left: 1px;
+            }
+        }
+        .btn-per{
+            @include logo();
+            height: 21px;
+            width: 21px;
+            background-position: -51px -77px;
+            float: right;
+            position: relative;
+            margin-top: 5px;
+            margin-right: 20%;
+            div{
+                width: 24px;
+                margin-left: -2px;
+                @include font-style();
+                color: $gray;
+                position: absolute;
+                top: 25px;
             }
         }
     }
