@@ -151,7 +151,8 @@ body {
           height: 17px;
           background-position: -122px -50px;
           float: right;
-          margin-left: 10px; }
+          margin-left: 10px;
+          margin-top: -1px; }
     body main .push {
       height: 50px;
       margin-bottom: -50px; }
