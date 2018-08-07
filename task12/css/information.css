@@ -141,8 +141,17 @@ body {
         font-size: 12px;
         font-weight: bold;
         color: #e63b0e;
-        margin-right: 10%;
+        margin-right: 6%;
         margin-top: 25.5px; }
+        body main a .right .arrow2 {
+          background-image: url(../img/css_sprites2.png);
+          background-repeat: no-repeat;
+          display: inline-block;
+          width: 9px;
+          height: 17px;
+          background-position: -122px -50px;
+          float: right;
+          margin-left: 10px; }
     body main .push {
       height: 50px;
       margin-bottom: -50px; }
@@ -156,18 +165,20 @@ body {
     body footer .btn-home {
       background-image: url(../img/css_sprites2.png);
       background-repeat: no-repeat;
-      float: left;
+      display: inline-block;
       width: 24px;
       height: 21px;
       background-position: -78px -10px;
+      float: left;
       position: relative;
       margin-top: 5px;
       margin-left: 20%; }
       body footer .btn-home div {
-        width: 25px;
+        width: 24px;
         margin-left: 1px;
         font-size: 12px;
         font-weight: bold;
+        font-weight: normal;
         color: #5fc0cd;
         position: absolute;
         top: 25px; }
@@ -177,6 +188,7 @@ body {
       display: inline-block;
       width: 48px;
       height: 48px;
+      margin-top: 2px;
       background-position: -10px -10px; }
       body footer .btn-center .msg {
         background-image: url(../img/css_sprites2.png);
@@ -190,18 +202,20 @@ body {
     body footer .btn-per {
       background-image: url(../img/css_sprites2.png);
       background-repeat: no-repeat;
+      display: inline-block;
       height: 21px;
       width: 21px;
       background-position: -51px -77px;
-      position: relative;
       float: right;
+      position: relative;
       margin-top: 5px;
       margin-right: 20%; }
       body footer .btn-per div {
-        width: 25px;
+        width: 24px;
         margin-left: -2px;
         font-size: 12px;
         font-weight: bold;
+        font-weight: normal;
         color: #999999;
         position: absolute;
         top: 25px; }
