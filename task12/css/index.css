@@ -1,3 +1,6 @@
+a {
+  text-decoration: none; }
+
 .divider {
   height: 0;
   width: 100%;
@@ -7,15 +10,15 @@
 
 body {
   margin: 0; }
-  body .header {
+  body header {
     width: 100%;
     height: 40px;
     background-color: #5fc0cd;
     text-align: center;
     position: fixed;
     top: 0; }
-    body .header .btn-left {
-      background-image: url(../../img/css_sprites.png);
+    body header .btn-left {
+      background-image: url(../img/css_sprites.png);
       background-repeat: no-repeat;
       display: inline-block;
       width: 10px;
@@ -24,48 +27,48 @@ body {
       margin-top: 11px;
       margin-left: 17px;
       float: left; }
-    body .header .title {
+    body header .title {
       color: #ffffff;
       font-size: 14px;
       font-weight: bold;
       font-size: 16px;
       display: inline-block;
       margin-top: 9px; }
-  body .main {
+  body main {
     width: 100%;
     margin-top: 40px; }
-    body .main .head-bg {
+    body main .head-bg {
       width: 100%;
       height: 164px;
-      background-image: url(../../img/task5-1_03.png);
+      background-image: url(../img/task5-1_03.png);
       background-repeat: no-repeat;
       background-size: cover;
       align-items: center;
       display: -webkit-flex; }
-      body .main .head-bg .head {
+      body main .head-bg .head {
         width: 85px;
         height: 85px;
-        background-image: url(../../img/task5-6_03.png);
+        background-image: url(../img/task5-6_03.png);
         display: inline-block;
         margin-left: 30px; }
-      body .main .head-bg .name {
+      body main .head-bg .name {
         color: #ffffff;
         font-size: 14px;
         font-weight: bold;
         margin-left: 20px;
         margin-top: -20px; }
-        body .main .head-bg .name span {
+        body main .head-bg .name span {
           font-size: 13px;
           margin-left: 15px; }
-      body .main .head-bg .loc {
-        background-image: url(../../img/css_sprites.png);
+      body main .head-bg .loc {
+        background-image: url(../img/css_sprites.png);
         background-repeat: no-repeat;
         display: inline-block;
         background-position: -31px -47px;
         position: absolute;
         top: 137px;
         left: 137px; }
-        body .main .head-bg .loc span {
+        body main .head-bg .loc span {
           color: #ffffff;
           font-size: 14px;
           font-weight: bold;
@@ -73,13 +76,13 @@ body {
           position: relative;
           top: -8px;
           left: 17px; }
-    body .main .line {
+    body main .line {
       width: 100%;
       height: 50px;
       align-items: center;
       display: -webkit-flex; }
-      body .main .line .divide {
-        background-image: url(../../img/css_sprites.png);
+      body main .line .divide {
+        background-image: url(../img/css_sprites.png);
         background-repeat: no-repeat;
         display: inline-block;
         width: 2px;
@@ -87,34 +90,34 @@ body {
         background-position: -72px -10px;
         margin-left: 15px;
         margin-right: 13px; }
-      body .main .line span {
+      body main .line span {
         font-size: 14px;
         font-weight: bold;
         color: #333333;
         display: inline-block; }
-      body .main .line .item {
+      body main .line .item {
         width: 5em;
         font-size: 14px;
         font-weight: bold;
         color: #999999;
         display: inline-block;
         margin-left: 0; }
-      body .main .line .item-content {
+      body main .line .item-content {
         display: inline-block;
         margin-right: 10px;
         flex: 1; }
-      body .main .line .price {
+      body main .line .price {
         color: #e26163; }
-      body .main .line .star {
-        background-image: url(../../img/css_sprites.png);
+      body main .line .star {
+        background-image: url(../img/css_sprites.png);
         background-repeat: no-repeat;
         display: inline-block;
         width: 12px;
         height: 12px;
         margin-right: 10px;
         background-position: -40px -10px; }
-      body .main .line .divider2 {
-        background-image: url(../../img/css_sprites.png);
+      body main .line .divider2 {
+        background-image: url(../img/css_sprites.png);
         background-repeat: no-repeat;
         display: inline-block;
         width: 2px;
@@ -122,23 +125,23 @@ body {
         margin-left: 10px;
         margin-right: 10px;
         background-position: -10px -47px; }
-    body .main .box {
+    body main .box {
       padding-left: 18px;
       height: auto; }
-    body .main .line2 {
+    body main .line2 {
       height: auto;
       padding-top: 15px;
       padding-bottom: 15px; }
-    body .main .push {
+    body main .push {
       height: 100px;
       margin-bottom: -100px; }
-  body .footer {
+  body footer {
     width: 100%;
     height: 100px;
     position: fixed;
     background-color: #ffffff;
     bottom: 0; }
-    body .footer .btn1 {
+    body footer .btn1 {
       width: 40%;
       height: 44px;
       line-height: 44px;
@@ -151,7 +154,7 @@ body {
       color: #5fc0cd;
       float: left;
       margin-left: 6%; }
-    body .footer .btn2 {
+    body footer .btn2 {
       width: 40%;
       height: 44px;
       line-height: 44px;

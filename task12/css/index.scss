@@ -4,7 +4,7 @@ $red:#e26163;
 $black:#333333;
 $width:100%;
 @mixin logo {
-    background-image: url(../../img/css_sprites.png);
+    background-image: url(../img/css_sprites.png);
     background-repeat: no-repeat;
     display: inline-block;
 }
@@ -23,6 +23,9 @@ $width:100%;
     font-weight: bold;
     margin-top: 25px;
 }
+a{
+    text-decoration: none;
+}
 .divider{
     height: 0;
     width: $width;
@@ -32,7 +35,7 @@ $width:100%;
 }
 body{
     margin: 0;
-    .header{
+    header{
         width: $width;
         height: 40px;
         background-color: $blue;
@@ -55,13 +58,13 @@ body{
             margin-top: 9px;
         }
     }
-    .main{
+    main{
         width: $width;
         margin-top: 40px;
         .head-bg{
             width: $width;
             height: 164px;
-            background-image: url(../../img/task5-1_03.png);
+            background-image: url(../img/task5-1_03.png);
             background-repeat: no-repeat;
             background-size: cover;
             align-items: center;
@@ -69,7 +72,7 @@ body{
             .head{
                 width: 85px;
                 height: 85px;
-                background-image: url(../../img/task5-6_03.png);
+                background-image: url(../img/task5-6_03.png);
                 display: inline-block;
                 margin-left: 30px;
             }
@@ -162,7 +165,7 @@ body{
             margin-bottom: -100px;
         }
     }
-    .footer{
+    footer{
         width: $width;
         height: 100px;
         position: fixed;
