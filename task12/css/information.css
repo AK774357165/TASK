@@ -160,12 +160,11 @@ body {
       width: 24px;
       height: 21px;
       background-position: -78px -10px;
-      float: left;
       position: relative;
       margin-top: 5px;
       margin-left: 20%; }
       body footer .btn-home div {
-        width: 24px;
+        width: 25px;
         margin-left: 1px;
         font-size: 12px;
         font-weight: bold;
@@ -195,12 +194,11 @@ body {
       height: 21px;
       width: 21px;
       background-position: -51px -77px;
-      float: right;
       position: relative;
       margin-top: 5px;
       margin-right: 20%; }
       body footer .btn-per div {
-        width: 24px;
+        width: 25px;
         margin-left: -2px;
         font-size: 12px;
         font-weight: bold;
