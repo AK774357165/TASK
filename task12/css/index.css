@@ -73,7 +73,6 @@ body {
           font-weight: bold;
           font-size: 10px;
           position: relative;
-          top: -1px;
           left: 17px; }
     body main .line {
       width: 100%;
@@ -92,6 +91,7 @@ body {
       body main .line span {
         font-size: 14px;
         font-weight: bold;
+        margin-top: 1.5px;
         color: #333333;
         display: inline-block; }
       body main .line .item {
