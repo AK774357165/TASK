@@ -8,12 +8,38 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <header></header>
-    <div class="side-nav">
-        <input type="checkbox" class="sidemenu">
-        <aside>
-            <div class="submenu"></div><div class="arrow"></div>
-        </aside>
+    <input type="checkbox" id="sidemenu">
+    <aside>
+        <ul>
+            <a href="#">
+                <span class="item1"></span>
+                <li>公告</li>
+                <span class="arrow"></span>
+            </a>
+            <a href="#">
+                <span class="item2"></span>
+                <li>设置</li>
+                <span class="arrow"></span>
+            </a>
+            <a href="#">
+                <span class="item3"></span>
+                <li>帮助</li>
+                <span class="arrow"></span>
+            </a>
+            <a href="#">
+                <span class="item4"></span>
+                <li>关于</li>
+                <span class="arrow"></span>
+            </a>
+        </ul>
+    </aside>
+    <div class="wrap">
+        <header></header>
+        <label for="sidemenu" class="sidemenucontrol">≡</label>
+        <main>
+            <div class="last-game">上次游戏：捉鬼猜词版</div>
+        </main>
     </div>
+    
 </body>
 </html>
