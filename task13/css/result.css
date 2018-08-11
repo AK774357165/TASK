@@ -1,0 +1,27 @@
+body {
+  margin: 0; }
+
+header {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  background-color: #29bde0; }
+  header .btn-left {
+    background-image: url(../img/css_sprites.png);
+    width: 26px;
+    height: 21px;
+    background-position: -10px -179px;
+    float: left;
+    margin-left: 8px;
+    margin-top: 9px; }
+  header .btn-right {
+    background-image: url(../img/css_sprites.png);
+    width: 20px;
+    height: 20px;
+    background-position: -206px -102px;
+    float: right;
+    margin-right: 8px;
+    margin-top: 10px; }
+
+/*# sourceMappingURL=result.css.map */
