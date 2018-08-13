@@ -1,0 +1,133 @@
+body {
+  margin: 0; }
+
+p {
+  margin: 0; }
+
+header .header-top {
+  width: 100%;
+  height: 39px;
+  background-color: #fff;
+  text-align: center;
+  display: -webkit-flex; }
+  header .header-top p {
+    color: #29b078;
+    font-size: 12px;
+    line-height: 39px;
+    margin-left: 15px; }
+  header .header-top .login-box {
+    width: auto;
+    height: 39px;
+    position: absolute;
+    right: 0;
+    align-items: center;
+    display: -webkit-flex;
+    margin-right: 15px; }
+  header .header-top .login {
+    font-size: 12px;
+    line-height: 39px;
+    color: #333333;
+    position: absolute;
+    right: 15px;
+    display: none; }
+    header .header-top .login span {
+      color: #29b078; }
+  @media (max-width: 500px) {
+    header .header-top p {
+      display: none; }
+    header .header-top .login-box {
+      display: none; }
+    header .header-top .login {
+      display: block; } }
+  header .header-top a {
+    display: inline-block; }
+  header .header-top .login1 {
+    background-image: url(../image/css_sprites.png);
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 24px;
+    background-position: -502px -231px;
+    margin-right: 12px; }
+  header .header-top .login2 {
+    background-image: url(../image/css_sprites.png);
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 24px;
+    background-position: -10px -339px;
+    margin-right: 12px; }
+  header .header-top .login3 {
+    background-image: url(../image/css_sprites.png);
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 24px;
+    background-position: -458px -231px; }
+header .header-bottom {
+  width: 100%;
+  height: 99px;
+  background-color: #29b078;
+  align-items: center;
+  display: -webkit-flex; }
+  header .header-bottom .row {
+    height: 99px;
+    align-items: center;
+    display: -webkit-flex; }
+  header .header-bottom .logo {
+    background-image: url(../image/company_03.png);
+    width: 107px;
+    height: 49px;
+    margin-left: 15px; }
+  header .header-bottom .nav {
+    width: auto;
+    position: absolute;
+    right: 15px;
+    height: 99px; }
+    header .header-bottom .nav a {
+      display: inline-block;
+      width: 65px;
+      line-height: 96px;
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      text-align: center; }
+    header .header-bottom .nav a:hover {
+      border-bottom: 3px solid #fff; }
+  @media (max-width: 500px) {
+    header .header-bottom .nav {
+      display: none; }
+    header .header-bottom .row {
+      height: 60px; } }
+@media (max-width: 500px) {
+  header .header-bottom {
+    height: 60px; } }
+header .dropdowm-menu {
+  width: 100%;
+  background-color: #29b078; }
+  header .dropdowm-menu .btn {
+    display: inline-block;
+    width: 22px;
+    height: 24px;
+    background-image: url(../image/b9a0b9e3-1ce5-4f1a-89a9-0b637909c63f_03.png);
+    position: absolute;
+    right: 30px;
+    top: 57px;
+    display: none; }
+  header .dropdowm-menu .dropdown-content {
+    width: 100%;
+    height: 200px;
+    display: none; }
+    header .dropdowm-menu .dropdown-content .content {
+      height: 50px;
+      line-height: 50px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      display: block;
+      text-decoration: none;
+      text-align: center; }
+  @media (max-width: 500px) {
+    header .dropdowm-menu .btn {
+      display: block; } }
+header .dropdowm-menu:hover .dropdown-content {
+  display: block; }
+
+/*# sourceMappingURL=index.css.map */
