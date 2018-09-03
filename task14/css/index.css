@@ -130,4 +130,44 @@ header .dropdowm-menu {
 header .dropdowm-menu:hover .dropdown-content {
   display: block; }
 
+main #frame {
+  position: absolute;
+  width: 100vw;
+  height: 31.19799166vw;
+  overflow: hidden; }
+main #dis {
+  position: absolute;
+  z-index: 999;
+  left: 50vw;
+  margin-left: -27px;
+  bottom: 0;
+  margin-bottom: 10px; }
+  main #dis span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid #fff; }
+  main #dis span:hover {
+    background-color: #fff; }
+main #photos img {
+  float: left;
+  width: 100vw;
+  height: 31.19799166vw; }
+main #photos {
+  position: absolute;
+  z-index: 9;
+  width: calc(100vw * 4); }
+main .play {
+  animation: ma 20s ease-out infinite alternate; }
+@keyframes ma {
+  0%,25% {
+    margin-left: 0px; }
+  30%,50% {
+    margin-left: -100vw; }
+  55%,75% {
+    margin-left: -200vw; }
+  80%,100% {
+    margin-left: -300vw; } }
+
 /*# sourceMappingURL=index.css.map */
