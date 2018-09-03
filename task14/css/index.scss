@@ -4,6 +4,7 @@ $lightgray:#fafafa;
 $black:#333333;
 body{
     margin: 0;
+    background-color: #fafafa;
 }
 p{
     margin: 0;
@@ -13,6 +14,12 @@ p{
     background-repeat: no-repeat;
     width: 26px;
     height: 24px;
+}
+@mixin img{
+    background-image: url(../image/css_sprites.png);
+    width: 44px;
+    height: 62px;
+    margin: auto;
 }
 header{
     .header-top{
@@ -166,13 +173,13 @@ header{
 }
 main{
     #frame{
-        position:absolute;
+        position: absolute;
         width:100vw;
         height:31.19799166vw;
         overflow:hidden;
     }
     #dis{
-        position: absolute;;
+        position: absolute;
         z-index: 999;
         left: 50vw;
         margin-left: -27px; 
@@ -207,6 +214,75 @@ main{
         30%,50% {       margin-left: -100vw;    }
         55%,75% {       margin-left: -200vw;    }
         80%,100% {       margin-left: -300vw;    }
+    }
+    .row3{
+        padding-top: 31.19799166vw;
+    }
+    .home-tag{
+        text-align: center;
+        padding: 70px 15px 58px 15px;
+        .img1{
+            @include img();
+            background-position: -394px -231px;
+        }
+        .img2{
+            @include img();
+            width: 60px;
+            background-position: -467px -66px;
+        }
+        .img3{
+            @include img();
+            width: 52px;
+            background-position: -394px -150px;
+        }
 
+        p{
+            font-size: 12px;
+            color: $gray;
+            margin-top: 32px;
+            display: inline-block;
+            text-align: left;
+        }            
+        .sec-line{
+            margin-left: 10px; 
+        }
+        .pre-num{
+            color: rgb(51, 153, 102);
+            padding-top: 66px;
+            padding-bottom: 66px;        
+                .img4{
+                width: 1px;
+                height: 264px;
+                background-image: url(../../task8/img/技能树首页_03.png);
+                float: left;
+                margin-top: -66px;
+            }
+
+        }
+        .total{
+            margin-bottom: 20px;
+            .img{
+                width: 13px;
+                height: 13px;
+                background-image: url(../image/css_sprites.png);
+                background-position: -514px -156px;
+                display: inline-block;
+                margin-right: 5px;
+                margin-left: -25px;
+            }
+            p{
+                color: $gray;
+                display: block;
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+    }
+    .row4{
+        text-align: center!important;
+        h4{
+            width: 100%;
+            font-size: 18px;
+        }
     }
 }
