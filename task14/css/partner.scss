@@ -1,0 +1,27 @@
+$green:#29b078;
+$gray:#a1a1a1;
+$lightgray:#fafafa;
+$black:#333333;
+body{
+    margin: 0;
+    background-color: #fafafa;
+}
+p{
+    margin: 0;
+}
+main{
+    .head-img{
+        width: 100vw;
+    height: 12.92vw;
+    background-image: url(../image/company_06.jpg);
+    background-size: 100%;
+    }
+    .line1{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 15px;
+        .par-com{
+            color: $green;
+        }
+    }
+}
