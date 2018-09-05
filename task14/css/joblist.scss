@@ -63,6 +63,10 @@ main{
             display: inline-block;
             margin-right: 1em;
         }
+        .jobs:hover{
+            background-color: $green;
+            color: #fff;
+        }
     }
     .job-info{
         width: 95%;

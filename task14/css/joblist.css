@@ -52,6 +52,9 @@ main {
       font-weight: bold;
       display: inline-block;
       margin-right: 1em; }
+    main .right .jobs:hover {
+      background-color: #29b078;
+      color: #fff; }
   main .job-info {
     width: 95%;
     padding-left: 0;
