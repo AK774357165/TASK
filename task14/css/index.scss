@@ -494,7 +494,7 @@ footer{
             padding-top: 3px;
             padding-bottom: 3px;
             text-align: left;
-            p{
+            a{
                 width: 5em;
                 height: 1.5em;
                 margin: auto;
@@ -508,7 +508,7 @@ footer{
                     margin-bottom: 3px;
                 }
             }
-            p:hover{
+            a:hover{
                 border-bottom: 1px solid $green;
             }
         }

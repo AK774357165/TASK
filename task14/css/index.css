@@ -408,11 +408,11 @@ footer .foot-top {
     padding-top: 3px;
     padding-bottom: 3px;
     text-align: left; }
-    footer .foot-top .link p {
+    footer .foot-top .link a {
       width: 5em;
       height: 1.5em;
       margin: auto; }
-      footer .foot-top .link p span {
+      footer .foot-top .link a span {
         width: 4px;
         height: 4px;
         border-radius: 50%;
@@ -420,7 +420,7 @@ footer .foot-top {
         background-color: #999999;
         margin-right: 8px;
         margin-bottom: 3px; }
-    footer .foot-top .link p:hover {
+    footer .foot-top .link a:hover {
       border-bottom: 1px solid #29b078; }
   @media (max-width: 992px) {
     footer .foot-top .links {
