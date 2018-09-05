@@ -24,4 +24,90 @@ main{
             color: $green;
         }
     }
+    .left-bar{
+        width: 90%;
+        margin: auto;
+        height: auto;
+        padding: 0;
+        background-color: #fff;
+        box-shadow: 0 0 3px #e6e6e6;
+        padding-bottom: 40px;
+        margin-bottom: 30px;
+        margin-top: -10px;
+        border-radius: 4px;
+        h4{
+            font-weight: bold;
+            padding-top: 21px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #e6e6e6;
+            text-align: center;
+        }
+        .cpy{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            text-align: center;
+        }
+        .dot{
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #fff;
+            border: 1.5px solid #ff650e;
+            display: inline-block;
+        }
+        .com-name{
+            width: 5em;
+            font-size: 14px;
+            color: $green;
+            display: inline-block;
+            text-align: left;
+        }        
+        .cpy:hover{
+            .dot{
+                background-color: #f9a372;
+            }
+            .com-name{
+                color: #ff650e;
+            }
+        }
+    }
+    .main-text{
+        font-size: 14px;
+        color: $gray;
+    }
+    .block{
+        text-indent: 2em;        
+        text-align: left;
+    }
+    .right-box{
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: 0 0 3px #eeeded;
+        text-align: center;
+        .brief-box{
+            padding: 20px 5% 20px 5%;
+            border-bottom: 1px solid #e6e6e6;
+            .com-logo{
+                width: 160px;
+                height: 80px;
+                background-image: url(../image/company.jpg);
+                background-position: center center;
+                background-repeat: no-repeat;
+                display: inline-block;
+            }
+        }
+        .main-text-bottom{
+            clear: both;
+            padding: 0 5% 180px 5%;
+            p{
+                padding-top: 40px;
+                margin: 0;
+                text-indent: 2em;
+                text-align: left;
+            }
+        }
+    }
 }

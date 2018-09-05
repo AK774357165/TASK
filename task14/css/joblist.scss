@@ -1,0 +1,191 @@
+$green:#29b078;
+$gray:#a1a1a1;
+$lightgray:#fafafa;
+$black:#333333;
+body{
+    margin: 0;
+    background-color: #fafafa;
+}
+p{
+    margin: 0;
+}
+.text-center{
+    text-align: center!important;
+}
+main{
+    padding-top: 30px;
+    padding-bottom: 240px;
+    .dividedline{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        border-top: 1px solid #cccccc;
+        width: 100%;
+        height: 0;
+    }
+    .dividedline2{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        border-top: 1px solid #cccccc;
+        width: 100%;
+        height: 0;
+        margin-bottom: 47px;
+    }
+    .line1{
+        padding-bottom: 33px;
+        .job{
+            color: $green;
+        }
+    }
+    .left{
+        margin: auto;
+        margin-left: 0;
+        margin-right: 20px;
+        .direction{
+            color: $gray;
+            height: 1.5em;
+            line-height: 1.6em;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    }
+    .right{
+        width: 80%;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        .jobs{
+            height: 1.5em;
+            line-height: 1.5em;
+            font-size: 12px;
+            color: #000;
+            font-weight: bold;
+            display: inline-block;
+            margin-right: 1em;
+        }
+    }
+    .job-info{
+        width: 95%;
+        padding-left: 0;
+        background-color: #fff;
+        box-shadow: 0 0 4px #cccccc;
+        margin: auto;
+        margin-bottom: 20px;
+        position: relative;
+        .bd{
+            border: 0.25px solid #edf1f2;
+            margin-left: -0.25px;
+            margin-right: -0.25px;
+        }
+        .photo{
+            width: 139px;
+            height: 139px;
+            background-image: url(../image/job.jpg);
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .brief{
+            text-align: left;
+            padding-left: 15px;
+            padding-right: 15px;
+            p{
+                font-size: 10px;
+                margin-bottom: 10px;
+            }
+        }
+        .item{
+            height: 40px;
+            color: $gray;
+            line-height: 40px;
+            font-size: 10px;
+            display: inline-block;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+        .star{
+            width: 16px;
+            height: 16px;
+            background-image: url(../image/css_sprites.png);
+            background-position: -458px -275px;
+            display: inline-block;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        .subline2{
+            color: #ff0000;
+            display: inline-block;
+            font-size: 10px;
+            span{
+                color: #000;
+            }
+        }
+        .item2{
+            width: 100%;
+            height: 120px;
+            color: $gray;
+            line-height: 120px;
+            font-size: 10px;
+            display: inline-block;
+            font-weight: bold;
+            text-align: center;
+        }
+        .bd2{
+            border-left: 0.25px solid #edf1f2;
+            border-bottom: 0.25px solid #edf1f2;
+        }
+        .bd3{
+            border-left: 0.25px solid #edf1f2;
+            border-top: 0.25px solid #edf1f2;
+        }
+        .item3{
+            width: 100%;
+            height: 40px;
+            color: #000;
+            line-height: 40px;
+            font-size: 10px;
+            display: inline-block;
+            padding-left: 20px;
+            padding-right: 15px;
+            div{
+                float: right;
+            }
+        }
+        .per-num{
+            height: 40px;
+            line-height: 40px;
+            font-size: 14px;
+            color: #000;
+            font-weight: bold;
+            margin-left: 15px;
+            span{
+                color:#ff0000;
+            }
+        }
+        .tips{
+            width: 100%;
+            padding-bottom: 10px;
+        }
+        .cover{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            display: none;
+            .title{
+                text-align: center;
+                margin-top: 85px;
+                margin-bottom: 35px;
+            }
+            p{
+                width: 80%;
+                margin: auto;
+            }
+        }
+    }
+    .job-info:hover .cover{
+        display: block;
+    }
+}
