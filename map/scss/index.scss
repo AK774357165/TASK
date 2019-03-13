@@ -1,0 +1,51 @@
+$gray:#7d7d7d;
+@mixin pic {
+    width: 439px;
+    height: 149px;
+    background-size: auto auto;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 3px $gray;
+}
+body{
+    background-color: #FFF;
+    header{
+        p{
+            color: $gray;
+            text-align: center;
+            margin-top: 30px;
+            font-weight: bold;
+            font-size: 25px;
+            margin-bottom: 50px;
+        }
+    }
+    main{
+         .floor{
+            text-align: center;
+            font-weight: bold;
+            .floorNumber{
+                display: inline-block;
+                margin: 10px 10px 10px 10px;
+                color: orange; 
+                .pic90{ 
+                    @include pic();
+                    background-image: url(../img/9.0small.png);
+                }
+                .pic45{
+                    @include pic();
+                    background-image: url(../img/4.5small.png);
+                }
+                .pic00{
+                    @include pic();
+                    background-image: url(../img/0.0small.png);
+                }   
+            }
+            .floorNumber:hover{
+                text-decoration-line: none;
+                cursor: pointer;
+            }
+            
+        } 
+    }
+   
+}

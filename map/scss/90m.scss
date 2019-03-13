@@ -1,0 +1,87 @@
+@mixin ceil {
+    display: inline-block;
+    opacity: 0.7;
+    margin: 0px;  
+}
+body{
+    margin: 0;
+    header{
+        color: orange;
+        text-align: center;
+    }
+    main{
+        .bac{
+            width: 4600px;
+            height: 1568px;
+            background-image: url(../img/9.0.jpg);
+            .coordinate{
+                padding-left: 245px;
+                padding-top: 498px;
+                .x0y0{
+                    @include ceil();
+                    width: 75px;
+                    height: 75px;
+                    background-color: greenyellow;
+                }
+                .x1y0{
+                    @include ceil();
+                    width: 184px;
+                    height: 70px;
+                    background-color: aqua;
+                } 
+                .x2y0{
+                    @include ceil();
+                    width: 120px;
+                    height: 70px;
+                    background-color: aquamarine;
+                }
+                .x3y0{
+                    @include ceil();
+                    width: 568px;
+                    height: 70px;
+                    background-color: bisque;
+                }
+                .x4y0{
+                    @include ceil();
+                    width: 180px;
+                    height: 45px;
+                    margin-bottom: 10px;
+                    background-color: aqua; 
+                }
+                .x5y0{
+                    @include ceil();
+                    width: 1500px;
+                    height: 50px;
+                    margin-bottom: 8px;
+                    background-color: bisque;
+                }
+                .x6y0{
+                    @include ceil();
+                    width: 245px;
+                    height: 45px;
+                    margin-bottom: 10px;
+                    background-color: aqua; 
+                }
+                .x7y0{
+                    @include ceil();
+                    width: 60px;
+                    height: 65px;
+                    background-color: greenyellow;
+                }
+                .x8y0{
+                    @include ceil();
+                    width: 80px;
+                    height: 65px;
+                    background-color: aqua; 
+                }
+                .x9y0{
+                    @include ceil();
+                    width: 75px;
+                    height: 65px;
+                    margin-left: 25px;
+                    background-color: greenyellow;
+                }
+            }
+        }
+    }
+}
