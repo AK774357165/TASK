@@ -1,0 +1,22 @@
+h3 {
+  text-align: center; }
+
+img {
+  width: 100px;
+  height: 100px; }
+
+table {
+  margin: auto;
+  width: 80%;
+  background-color: lightblue;
+  border: 1px solid black;
+  border-width: 1px 1px 1px 1px;
+  border-collapse: collapse; }
+  table tr {
+    text-align: center;
+    border: 1px solid black;
+    border-width: 1px 1px 1px 1px; }
+    table tr th, table tr td {
+      border: 1px solid black; }
+
+/*# sourceMappingURL=userslist.css.map */

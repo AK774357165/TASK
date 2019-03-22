@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    background-color: aliceblue;
+    h2{
+        text-align: center;
+    }
+    form{
+        table{
+            border: 1px solid black;
+            width: 70%;
+            border-collapse: collapse;
+            margin: auto;
+            td{
+                border: 1px solid black;
+                padding: 5px;
+                input{
+                    border: none;
+                    width: 50%;
+                    background-color: aliceblue;
+                    outline: none;
+                }
+
+                textarea{
+                    width: 99%;
+                    border: none;
+                    background-color: aliceblue;
+                    outline: none;
+                    padding: 0;
+                }                
+                ::placeholder{
+                    color: lightgrey;
+                    font-family: 'Courier New', Courier, monospace;
+                    font-size: 12px;
+                }
+            }
+        }
+        .submit{
+            width: 80px;
+            background-color: lightsteelblue;
+            float: right;
+            margin-right: 15%;
+            margin-top: 20px;
+        }
+        .submit:hover{
+            cursor: pointer;
+        }
+    }
+
+}

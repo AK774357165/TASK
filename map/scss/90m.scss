@@ -1,13 +1,20 @@
 @mixin ceil {
     display: inline-block;
-    opacity: 0.7;
+    opacity: 0.8;
     margin: 0px;  
+}
+@mixin row {
+    display: inline-block;
+    width: auto;
 }
 body{
     margin: 0;
-    header{
-        color: orange;
-        text-align: center;
+    header{        
+        h2{
+            color: orange;
+            text-align: center; 
+        }
+        
     }
     main{
         .bac{
@@ -17,6 +24,9 @@ body{
             .coordinate{
                 padding-left: 245px;
                 padding-top: 498px;
+                .y0{
+                    height: 75px;
+                }
                 .x0y0{
                     @include ceil();
                     width: 75px;
@@ -26,7 +36,9 @@ body{
                 .x1y0{
                     @include ceil();
                     width: 184px;
-                    height: 70px;
+                    height: 50px;
+                    margin-bottom: 20px;
+                    margin-bottom: 8px;
                     background-color: aqua;
                 } 
                 .x2y0{
@@ -38,7 +50,7 @@ body{
                 .x3y0{
                     @include ceil();
                     width: 568px;
-                    height: 70px;
+                    height: 65px;
                     background-color: bisque;
                 }
                 .x4y0{
@@ -80,6 +92,210 @@ body{
                     height: 65px;
                     margin-left: 25px;
                     background-color: greenyellow;
+                }
+                .y0_1{
+                    display: inline-block;
+                    position: absolute;
+                    left: 3358px;
+                }
+                .x10y0{
+                    @include ceil();
+                    width: 60px;
+                    height: 105px;
+                    position: absolute;
+                    top: -50px;
+                    background-color: aqua; 
+                }
+                .x11y0{
+                    @include ceil();
+                    width: 553px;
+                    height: 13px;
+                    position: absolute;
+                    top: -23px;
+                    left: 60px;
+                    background-color: bisque;
+                }                
+                .x12y0{
+                    @include ceil();
+                    width: 553px;
+                    height: 13px;
+                    position: absolute;
+                    top: 5px;
+                    left: 60px;
+                    background-color: bisque;
+                }
+                .x13y0{
+                    @include ceil();
+                    width: 60px;
+                    height: 138px;
+                    position: absolute;
+                    top: -30px;
+                    left: 616px;
+                    background-color: aqua; 
+                }
+                .x14y0{
+                    @include ceil();
+                    width: 40px;
+                    height: 40px;
+                    position: absolute;
+                    top: -38px;
+                    left: 680px;
+                    background-color: greenyellow; 
+                }
+                .x15y0{
+                    @include ceil();
+                    width: 48px;
+                    height: 37px;
+                    position: absolute;
+                    top: -48px;
+                    left: 731px;
+                    background-color: aqua; 
+                }
+                .y1{
+                    height: 60px;
+                }
+                .x0y1{
+                    @include ceil();
+                    width: 70px;
+                    height: 60px;
+                    background-color: aqua; 
+                }
+                .y2{
+                    @include row();
+                    float: left;
+                    height: 75px;
+                }
+                .x0y2{
+                    @include ceil();
+                    width: 75px;
+                    height: 75px;
+                    background-color: greenyellow;
+                }
+                .x1y2{
+                    @include ceil();
+                    width: 184px;
+                    height: 50px;
+                    margin-bottom: 20px;
+                    background-color: aqua;
+                } 
+                .x2y2{
+                    @include ceil();
+                    width: 60px;
+                    height: 40px;
+                    margin-bottom: 23px;
+                    background-color: aquamarine;
+                }
+                .x3y2{
+                    @include ceil();
+                    width: 715px;
+                    height: 65px;
+                    margin-bottom: 10px;
+                    background-color: bisque;
+                }
+                .x4y2{
+                    @include ceil();
+                    width: 60px;
+                    height: 40px;
+                    margin-bottom: 23px;
+                    background-color: aquamarine;
+                }
+                .x5y2{
+                    @include ceil();
+                    width: 95px;
+                    height: 65px;
+                    margin-bottom: 10px;
+                    background-color: greenyellow;
+                }
+                .y2_1{
+                    display: inline-block;
+                    position: relative;
+                }
+                .x6y2{
+                    @include ceil();
+                    width: 500px;
+                    height: 90px;
+                    margin-top: -35px;
+                    background-color: aquamarine;
+                }
+                .y2_2{
+                    display: inline-block;
+                    position: relative;
+                }
+                .x7y2{
+                    @include ceil();
+                    width: 62px;
+                    height: 90px;
+                    margin-left: 1110px;
+                    margin-top: -35px;
+                    background-color: aquamarine;
+                }
+                .x8y2_1{
+                    @include ceil();
+                    width: 245px;
+                    height: 13px;
+                    position: absolute;
+                    top: -27px;
+                    background-color: bisque;
+                }
+                .x8y2_2{
+                    @include ceil();
+                    width: 860px;
+                    height: 13px;
+                    position: absolute;
+                    background-color: bisque;
+                }
+                .x8y2_3{
+                    @include ceil();
+                    width: 860px;
+                    height: 13px;
+                    position: absolute;
+                    bottom: 18px;
+                    background-color: bisque;
+                }
+                .x8y2_4{
+                    @include ceil();
+                    width: 550px;
+                    height: 13px;
+                    position: absolute;
+                    left: 1482px;
+                    top: -27px;
+                    background-color: bisque;
+                }
+                .x8y2_5{
+                    @include ceil();
+                    width: 20px;
+                    height: 80px;
+                    position: absolute;
+                    top: -33px;
+                    left: 1225px;
+                    background-color: red;
+                }
+                .x8y2_6{
+                    @include ceil();
+                    width: 20px;
+                    height: 138px;
+                    position: absolute;
+                    top: -90px;
+                    left: 1533px;
+                    background-color: red;
+                }
+                .x8y2_7{
+                    @include ceil();
+                    width: 20px;
+                    height: 138px;
+                    position: absolute;
+                    top: -90px;
+                    left: 1778px;
+                    background-color: red;
+                }
+                .x8y2_8{
+                    @include ceil();
+                    width: 20px;
+                    height: 138px;
+                    position: absolute;
+                    top: -90px;
+                    left: 1961px;
+                    background-color: red;
                 }
             }
         }

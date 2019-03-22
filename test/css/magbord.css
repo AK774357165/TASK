@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  background-color: aliceblue; }
+  body h2 {
+    text-align: center; }
+  body form table {
+    border: 1px solid black;
+    width: 70%;
+    border-collapse: collapse;
+    margin: auto; }
+    body form table td {
+      border: 1px solid black;
+      padding: 5px; }
+      body form table td input {
+        border: none;
+        width: 50%;
+        background-color: aliceblue;
+        outline: none; }
+      body form table td textarea {
+        width: 99%;
+        border: none;
+        background-color: aliceblue;
+        outline: none;
+        padding: 0; }
+      body form table td ::placeholder {
+        color: lightgrey;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 12px; }
+  body form .submit {
+    width: 80px;
+    background-color: lightsteelblue;
+    float: right;
+    margin-right: 15%;
+    margin-top: 20px; }
+  body form .submit:hover {
+    cursor: pointer; }
+
+/*# sourceMappingURL=magbord.css.map */

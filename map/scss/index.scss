@@ -1,7 +1,15 @@
 $gray:#7d7d7d;
-@mixin pic {
+@mixin pic{
     width: 439px;
     height: 149px;
+    background-size: auto auto;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 3px $gray;
+}
+@mixin pic2{
+    width: 300px;
+    height: 102px;
     background-size: auto auto;
     margin: auto;
     margin-bottom: 20px;
@@ -11,8 +19,10 @@ body{
     background-color: #FFF;
     header{
         p{
+            width: 90%;
             color: $gray;
             text-align: center;
+            margin: auto;
             margin-top: 30px;
             font-weight: bold;
             font-size: 25px;
@@ -38,7 +48,21 @@ body{
                 .pic00{
                     @include pic();
                     background-image: url(../img/0.0small.png);
-                }   
+                } 
+                @media(max-width: 450px){
+                    .pic90{ 
+                        @include pic2();
+                        background-image: url(../img/9.0small.png);
+                    }
+                    .pic45{
+                        @include pic2();
+                        background-image: url(../img/4.5small.png);
+                    }
+                    .pic00{
+                        @include pic2();
+                        background-image: url(../img/0.0small.png);
+                    } 
+                }
             }
             .floorNumber:hover{
                 text-decoration-line: none;

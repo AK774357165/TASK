@@ -1,8 +1,10 @@
 body {
   background-color: #FFF; }
   body header p {
+    width: 90%;
     color: #7d7d7d;
     text-align: center;
+    margin: auto;
     margin-top: 30px;
     font-weight: bold;
     font-size: 25px;
@@ -38,6 +40,31 @@ body {
         margin-bottom: 20px;
         box-shadow: 1px 1px 3px #7d7d7d;
         background-image: url(../img/0.0small.png); }
+      @media (max-width: 450px) {
+        body main .floor .floorNumber .pic90 {
+          width: 300px;
+          height: 102px;
+          background-size: auto auto;
+          margin: auto;
+          margin-bottom: 20px;
+          box-shadow: 1px 1px 3px #7d7d7d;
+          background-image: url(../img/9.0small.png); }
+        body main .floor .floorNumber .pic45 {
+          width: 300px;
+          height: 102px;
+          background-size: auto auto;
+          margin: auto;
+          margin-bottom: 20px;
+          box-shadow: 1px 1px 3px #7d7d7d;
+          background-image: url(../img/4.5small.png); }
+        body main .floor .floorNumber .pic00 {
+          width: 300px;
+          height: 102px;
+          background-size: auto auto;
+          margin: auto;
+          margin-bottom: 20px;
+          box-shadow: 1px 1px 3px #7d7d7d;
+          background-image: url(../img/0.0small.png); } }
     body main .floor .floorNumber:hover {
       text-decoration-line: none;
       cursor: pointer; }
