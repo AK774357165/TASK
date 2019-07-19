@@ -1,3 +1,122 @@
-
+body {
+  font-family: "Microsoft Yahei";
+  font-size: 12px;
+  margin: 0;
+  background-image: url(../img/1.jpg);
+  background-repeat: no-repeat; }
+  body h1 {
+    margin: 80px auto 50px auto;
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: 0px 1px 1px #555; }
+  body .wrap {
+    width: 460px;
+    height: 370px;
+    background-color: #fff;
+    margin: 0 auto; }
+    body .wrap .title {
+      margin: 0;
+      color: #333333;
+      text-align: center;
+      width: 100%;
+      height: 70px;
+      line-height: 70px;
+      font-size: 20px;
+      border-bottom: 2px solid #e2e2e2; }
+    body .wrap .loginform {
+      margin-top: 30px; }
+    body .wrap .uinArea {
+      height: 55px;
+      position: relative;
+      z-index: 10;
+      text-align: center; }
+    body .wrap .pwdArea {
+      height: 55px;
+      margin-bottom: 10px;
+      position: relative;
+      text-align: center;
+      z-index: 3; }
+    body .wrap .inputOuter {
+      display: inline-block; }
+      body .wrap .inputOuter .inputstyle {
+        border: 2px solid #e2e2e2;
+        height: 30px;
+        width: 200px;
+        outline: none; }
+      body .wrap .inputOuter .inputstyle:focus {
+        outline: 2px solid #2795dc;
+        border: 2px solid #fff; }
+    body .wrap .input-tips {
+      width: 50px;
+      height: 42px;
+      font-size: 16px;
+      line-height: 42px;
+      font-family: "Hiragino Sans GB", "Microsoft Yahei"; }
+    body .wrap .button {
+      text-align: center; }
+      body .wrap .button .button_blue {
+        display: inline-block;
+        height: 41px;
+        border-radius: 4px;
+        background: #2795dc;
+        border: none;
+        cursor: pointer;
+        border-bottom: 3px solid #0078b3;
+        color: #fff;
+        font-size: 16px;
+        padding: 0 10px;
+        width: 140px;
+        text-align: center;
+        outline: none;
+        font-family: "Microsoft Yahei",Arial, Helvetica, sans-serif; }
+      body .wrap .button input.button_blue:hover {
+        background: #0081c1;
+        border-bottom: 3px solid #006698;
+        color: #fff;
+        text-decoration: none; }
+  @media (max-width: 700px) {
+    body h1 {
+      font-size: 20px; }
+    body .wrap {
+      width: 300px;
+      height: 240px; }
+      body .wrap .title {
+        font-size: 15px;
+        width: 100%;
+        height: 40px;
+        line-height: 40px; }
+      body .wrap .loginform {
+        margin-top: 10px; } }
+  @media (max-width: 420px) {
+    body h1 {
+      font-size: 16px; }
+    body .wrap {
+      width: 230px;
+      height: 185px; }
+      body .wrap .title {
+        font-size: 12px;
+        width: 100%;
+        height: 25px;
+        line-height: 25px; }
+      body .wrap .loginform {
+        margin-top: 20px; }
+      body .wrap .input-tips {
+        font-size: 12px;
+        line-height: 24px; }
+      body .wrap .uinArea {
+        height: 35px;
+        text-align: center; }
+      body .wrap .pwdArea {
+        height: 35px;
+        margin-bottom: 10px; }
+      body .wrap .inputOuter .inputstyle {
+        height: 20px;
+        width: 135px; }
+      body .wrap .button .button_blue {
+        height: 30px;
+        font-size: 12px;
+        width: 80px; } }
 
 /*# sourceMappingURL=login.css.map */

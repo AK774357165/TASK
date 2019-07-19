@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Failure</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/failure.css">
+</head>
+<body>
+    <header>
+        <h2>PFH设备故障问题分析单<br>Analyse für Anlagestörungen</h2>
+    </header>
+    <main>
+        <form action="doAction.php" method="POST" > 
+            <table>
+                    <tr>
+                        <td>设备名称<br>Bennenung für Anlage</td>
+                        <td colspan="2"><input type="text" name="deviceName"></td>
+                        <td>区域<br>Bereich</td>
+                        <td><input type="text" name="bereich"></td>
+                        <td>工位号<br>AFO</td>
+                        <td colspan="2"><input type="text" name="AFO" style="width:90%"></td>
+                    </tr>
+                    <tr>
+                        <td>故障时间<br>Uhrzeit der Störung</td>
+                        <td colspan="2"><input type="datetime-local" name="failTime"></td>
+                        <td rowspan='3'>故障属性<br>Zugehörigkeit<br> der Störung</td>
+                        <td colspan="4" style="text-align:left"><input type="radio" value="偶发" name="prop" colspan="3"><p>偶发<br>zufällig</p> </td>
+                    </tr>
+                    <tr>
+                        <td>修复时间<br>Uhrzeit der Reparatur</td>123
+                        <td colspan="2"><input type="datetime-local" name="repTime"></td>
+                        <td style="text-align:left" colspan="2"><input type="radio" value="再发" name="prop"><p>再发<br>wiederholt</p> </td>
+                        <td>故障频次：<br>Frequenz der<br>Störung:</td>
+                        <td><input type="text" name="fre"></td>
+                    </tr>
+                    <tr>
+                        <td>影响主线时间 (分钟)<br>Beeinträchtigte<br>Produktionszeit</td>
+                        <td colspan="2"><input type="text" name="inflTime"></td>
+                        <td style="text-align:left" colspan="2"><input type="radio" value="其他" name="prop"><p>其他<br>sonstig</p> </td>
+                        <td>成本核算：<br>Kosten</td>
+                        <td><input type="text" name="cost"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan='5'>故障现象<br>Beschreibung<br>der Störung</td>
+                        <td rowspan='5' colspan="5">
+                            <textarea name="introduction" id="failIntroduction" cols="30" rows="10"></textarea>
+                        </td>
+                        <td rowspan='4'>维修人员</td>
+                        <td><input type="text" name="maintainer1"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="maintainer2"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="maintainer3"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="maintainer4"></td>
+                    </tr>
+                    <tr>
+                        <td>日期：<br>Datum:</td>
+                        <td><input type="date" name="date"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="8">维修过程描述及修复措施<br>Beschreibung von Reparatursprozess</td>
+                    </tr>
+                    <tr>
+                        <td colspan="7">维修过程<br>Reparatursprozess</td>
+                        <td>消耗时间(分钟)<br>Gebrauchte Zeit(Minuten)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="7"><textarea name="process1" id="fixProcess" cols="30" rows="2"></textarea></td>
+                        <td><input type="text" name="fixTime1" id="fixtime"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="7"><textarea name="process2" id="fixProcess" cols="30" rows="2"></textarea></td>
+                        <td><input type="text" name="fixTime2" id="fixtime"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="7"><textarea name="process3" id="fixProcess" cols="30" rows="2"></textarea></td>
+                        <td><input type="text" name="fixTime3" id="fixtime"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="7"><textarea name="process4" id="fixProcess" cols="30" rows="2"></textarea></td>
+                        <td><input type="text" name="fixTime4" id="fixtime"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="7"><textarea name="process5" id="fixProcess" cols="30" rows="2"></textarea></td>
+                        <td><input type="text" name="fixTime5" id="fixtime"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="7"><textarea name="process6" id="fixProcess" cols="30" rows="2"></textarea></td>
+                        <td><input type="text" name="fixTime6" id="fixtime"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right" colspan="7">总计:</td>
+                        <td><input type="text" name="totalTime" id="totalTime"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="8" style="padding:15px;text-align: left">故障原因分析(基于5Why法分析结构)：<br><textarea name="analyze" id="failAnalyze" cols="30" rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>维修技术员：<br>Techniker:</td>
+                        <td colspan="4"> <input type="text" name="Technician" id="Technician" style="width:90%"></td>
+                        <td>日期：<br>Datum:</td>
+                        <td colspan="2"> <input type="date" name="Datum" id="Datum" style="width:90%"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="9">防范和改进措施<br>Vorbeugungs-und<br>Verbesserungsmassnahme</td>
+                        <td>序号<br>Nr.</td>
+                        <td colspan="2">措施<br>Massnahmen</td>
+                        <td>负责人<br>Verant.</td>
+                        <td>期限<br>Frist</td>
+                        <td>完成时间<br>Erledigungs<br>datum</td>
+                        <td>状态<br>Stand</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td colspan="2"><input type="text" name="step1" style="width:95%"></td>
+                        <td><input type="text" name="Tman1" style="width:60%"></td>
+                        <td><input type="text" name="deadLine1"></td>
+                        <td><input type="text" name="FinTime1"></td>
+                        <td><input type="text" name="stand1"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td colspan="2"><input type="text" name="step2" style="width:95%"></td>
+                        <td><input type="text" name="Tman2" style="width:60%"></td>
+                        <td><input type="text" name="deadLine2"></td>
+                        <td><input type="text" name="FinTime2"></td>
+                        <td><input type="text" name="stand2"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td colspan="2"><input type="text" name="step3" style="width:95%"></td>
+                        <td><input type="text" name="Tman3" style="width:60%"></td>
+                        <td><input type="text" name="deadLine3"></td>
+                        <td><input type="text" name="FinTime3"></td>
+                        <td><input type="text" name="stand3"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td colspan="2"><input type="text" name="step4" style="width:95%"></td>
+                        <td><input type="text" name="Tman4" style="width:60%"></td>
+                        <td><input type="text" name="deadLine4"></td>
+                        <td><input type="text" name="FinTime4"></td>
+                        <td><input type="text" name="stand4"></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td colspan="2"><input type="text" name="step5" style="width:95%"></td>
+                        <td><input type="text" name="Tman5" style="width:60%"></td>
+                        <td><input type="text" name="deadLine5"></td>
+                        <td><input type="text" name="FinTime5"></td>
+                        <td><input type="text" name="stand5"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">状态标识：<br>Kennzeichung des Stands:</td>
+                        <td colspan="5"><input type="text" name="state" style="width:97%"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">发现问题<br>Problem finden</td>
+                        <td colspan="2"><input type="text" name="problems" style="width:90%"></td>
+                        <td>已确定改进措施<br>Massnahme feststellen </td>
+                        <td colspan="3"><input type="text" name="sureTresu" style="width:95%"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">已进行原因分析<br>In Analyse</td>
+                        <td colspan="2"><input type="text" name="probAna" style="width:90%"></td>
+                        <td>改进措施已落实<br>Verbesserung im Einsatz</td>
+                        <td colspan="3"><input type="text" name="workable" style="width:95%"></td>
+                    </tr>
+                </table> 
+                <input type="submit" class="submit" value="提交"> 
+        </form>
+    </main>
+</body>
+<script src="./js/failure.js"></script>
+</html>

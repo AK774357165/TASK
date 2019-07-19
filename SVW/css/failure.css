@@ -1,0 +1,41 @@
+body {
+  width: 100%;
+  margin: 0; }
+  body header {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    body header h2 {
+      margin: auto; }
+  body main {
+    padding-bottom: 20px;
+    font-size: 13px;
+    font-weight: bold; }
+    body main table {
+      border: 2px solid #000;
+      border-collapse: collapse;
+      margin: auto;
+      width: 85%; }
+      body main table td {
+        border: 1px solid black;
+        width: 20px;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px; }
+        body main table td input {
+          display: inline-block;
+          border: none;
+          outline: none;
+          height: 40px;
+          font-size: 16px; }
+        body main table td p {
+          display: inline-block;
+          margin: 5px auto; }
+        body main table td textarea {
+          width: 99%;
+          height: 95%;
+          outline: none;
+          border: none;
+          font-size: 20px; }
+
+/*# sourceMappingURL=failure.css.map */

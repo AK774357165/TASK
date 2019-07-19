@@ -1,0 +1,48 @@
+body{
+    width: 100%;
+    margin: 0;
+    header{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        h2{
+            margin: auto;
+        }
+    }
+    main{
+        padding-bottom: 20px;
+        font-size: 13px;
+        font-weight: bold;
+        table{
+            border: 2px solid #000;
+            border-collapse: collapse;
+            margin: auto; 
+            width: 85%;
+            td{
+                border: 1px solid black;
+                width: 20px;
+                text-align: center;
+                padding-left: 10px;
+                padding-right: 10px;
+                input{
+                    display: inline-block;
+                    border: none;
+                    outline: none;
+                    height: 40px;
+                    font-size: 16px;
+                }
+                p{
+                    display: inline-block;
+                    margin: 5px auto;
+                }
+                textarea{
+                    width: 99%;
+                    height: 95%;
+                    outline: none;
+                    border: none;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
